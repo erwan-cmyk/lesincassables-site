@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "stories"
+    label: "Histoires"
+    files:
+      - name: "stories"
+        label: "Toutes les histoires"
+        file: "data/stories.json"
+        fields:
+          - label: "Histoires"
+            name: "stories"
+            widget: "list"
+            summary: "{{name}} — {{pathologyLabel}}"
+            fields:
+              - { label: "Identifiant (id)", name: "id", widget: "string", hint: "minuscules, tirets, sans espace ni accent — ex: john-doe" }
+              - { label: "Nom", name: "name", widget: "string" }
+              - { label: "Pathologie (label affiché)", name: "pathologyLabel", widget: "string" }
+              - { label: "Pathologie (filtre)", name: "pathologyFilter", widget: "string", hint: "minuscule, court, sans accent — ex: oi, sla, drepano" }
+              - { label: "Pays", name: "country", widget: "string" }
+              - { label: "Accroche courte (carte)", name: "hook", widget: "text" }
+              - label: "Teinte visuelle"
+                name: "tint"
+                widget: "select"
+                options: ["tint-1", "tint-2", "tint-3"]
+              - { label: "Mettre en avant sur la page d'accueil", name: "featured", widget: "boolean", default: false, required: false }
+              - { label: "Accroche pour la mise en avant (optionnel)", name: "featuredHook", widget: "string", required: false }

@@ -1,0 +1,114 @@
+{
+  "stories": [
+    {
+      "id": "mckenzie-coan",
+      "name": "McKenzie Coan",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "États-Unis",
+      "hook": "Nageuse paralympique, recordwoman du monde — la même pathologie que le fondateur des Incassables.",
+      "tint": "tint-1",
+      "featured": true,
+      "featuredHook": "Jamais censée tenir debout selon les médecins. Aujourd'hui recordwoman du monde de natation paralympique."
+    },
+    {
+      "id": "mimie-mathy",
+      "name": "Mimie Mathy",
+      "pathologyLabel": "Achondroplasie",
+      "pathologyFilter": "achon",
+      "country": "France",
+      "hook": "Plus de 40 ans de carrière, Légion d'honneur — icône du paysage audiovisuel français.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "raul-krauthausen",
+      "name": "Raul Krauthausen",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Allemagne",
+      "hook": "De l'inaccessibilité vécue à l'entrepreneuriat social — Ordre du Mérite d'Allemagne.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "stephen-hawking",
+      "name": "Stephen Hawking",
+      "pathologyLabel": "SLA",
+      "pathologyFilter": "sla",
+      "country": "Royaume-Uni",
+      "hook": "Plus de 50 ans avec la maladie, une des carrières scientifiques les plus marquantes du siècle.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "tionne-watkins",
+      "name": "Tionne Watkins",
+      "pathologyLabel": "Drépanocytose",
+      "pathologyFilter": "drepano",
+      "country": "États-Unis",
+      "hook": "Chanteuse du groupe TLC, porte-parole active de la lutte contre la drépanocytose.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "katie-ledecky",
+      "name": "Katie Ledecky",
+      "pathologyLabel": "Ehlers-Danlos",
+      "pathologyFilter": "eds",
+      "country": "États-Unis",
+      "hook": "Nageuse olympique la plus médaillée de l'histoire — malgré un syndrome POTS diagnostiqué en 2015.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "gaelynn-lea",
+      "name": "Gaelynn Lea",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "États-Unis",
+      "hook": "Violoniste, gagnante du NPR Tiny Desk Contest — face à des milliers de candidats valides.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "emilio-gavira",
+      "name": "Emilio Gavira",
+      "pathologyLabel": "Achondroplasie",
+      "pathologyFilter": "achon",
+      "country": "Espagne",
+      "hook": "Acteur et baryton, nommé aux Goya — double carrière cinéma et opéra.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "martin-caparros",
+      "name": "Martín Caparrós",
+      "pathologyLabel": "SLA",
+      "pathologyFilter": "sla",
+      "country": "Argentine",
+      "hook": "Écrivain et journaliste argentin de renom, continue son œuvre malgré le diagnostic.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "alvaro-valera",
+      "name": "Álvaro Valera",
+      "pathologyLabel": "Charcot-Marie-Tooth",
+      "pathologyFilter": "cmt",
+      "country": "Espagne",
+      "hook": "7 Jeux paralympiques, or à Sydney 2000, aujourd'hui entrepreneur — profil miroir du fondateur.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "shane-burcaw",
+      "name": "Shane Burcaw",
+      "pathologyLabel": "Amyotrophie spinale",
+      "pathologyFilter": "sma",
+      "country": "États-Unis",
+      "hook": "Écrivain et créateur de contenu, des millions de vues sur une vie racontée sans filtre ni pathos.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "marta-arce",
+      "name": "Marta Arce",
+      "pathologyLabel": "Déficience visuelle rare",
+      "pathologyFilter": "autre",
+      "country": "Espagne",
+      "hook": "Judoka paralympique, porte-drapeau de la délégation espagnole à Paris 2024.",
+      "tint": "tint-3"
+    }
+  ]
+}
