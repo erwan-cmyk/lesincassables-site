@@ -50,8 +50,8 @@
     {
       "id": "katie-ledecky",
       "name": "Katie Ledecky",
-      "pathologyLabel": "Ehlers-Danlos",
-      "pathologyFilter": "eds",
+      "pathologyLabel": "Syndrome POTS",
+      "pathologyFilter": "pots",
       "country": "États-Unis",
       "hook": "Nageuse olympique la plus médaillée de l'histoire — malgré un syndrome POTS diagnostiqué en 2015.",
       "tint": "tint-3"
@@ -110,5 +110,5 @@
       "hook": "Judoka paralympique, porte-drapeau de la délégation espagnole à Paris 2024.",
       "tint": "tint-3"
     }
-  ]
+    ]
 }
