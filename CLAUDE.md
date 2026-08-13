@@ -30,7 +30,13 @@ admin/config.yml : config Decap CMS, backend git-gateway vers Netlify Identity.
 Historique : le 13/08/2026, le repo avait une structure cassée suite à un
 upload manuel qui avait aplati les dossiers (admin/index.html avait écrasé
 index.html à la racine, et css/js/data manquaient). Corrigé, voir commits
-de cette date.
+de cette date. Le même jour, découverte séparée : le projet Netlify n'avait
+jamais réussi un seul déploiement depuis sa création, à cause d'une commande
+de build erronée ("cecil build", un outil absent de l'environnement) et
+d'un dossier de publication ("_site") qui n'a jamais existé. Corrigé dans
+les réglages Netlify (build command vidée, publish directory mis à la
+racine) — sans lien avec la structure du repo, un réglage par défaut
+mal choisi à la création du projet.
 
 ## Règle d'or : ajouter une histoire
 Pour ajouter une histoire, on ajoute une entrée dans data/stories.json.
@@ -39,7 +45,11 @@ id, name, pathologyLabel, pathologyFilter, country, hook, tint
 (tint-1, tint-2 ou tint-3, à faire tourner). featured: true sur une seule
 entrée à la fois pour la case "Dernière histoire" du hero. Les stats du hero
 (nombre d'histoires, de pathologies, de pays) et les filtres sont calculés
-automatiquement depuis ce fichier, rien à mettre à jour à la main.
+automatiquement depuis ce fichier, rien à mettre à jour à la main. Si
+pathologyFilter reprend une valeur déjà utilisée ailleurs dans le fichier,
+pathologyLabel doit être rigoureusement identique au texte déjà utilisé
+pour ce même filtre, sinon le chip de filtre affiche un libellé
+incohérent selon l'ordre des entrées.
 
 ## Photos, point sensible, ne jamais court-circuiter
 Aucune vraie photo de personne réelle sans droits vérifiés (licence
@@ -51,11 +61,20 @@ trouvée en ligne sans confirmation explicite d'Erwan sur les droits.
 ## Exactitude des faits, le cœur de la crédibilité du média
 Le site se revendique "histoires vérifiées". Chaque entrée de
 data/stories.json doit être vérifiable par une source fiable avant
-publication. État au 13/08/2026 : 12 profils dans le fichier, seule
-l'entrée Katie Ledecky a été corrigée (elle est diagnostiquée POTS, pas
-Ehlers-Danlos, deux syndromes différents bien que parfois associés). Les
-11 autres profils n'ont pas encore été repassés en vérification source par
-Claude, à faire avant de les présenter publiquement comme "vérifiées".
+publication. État au 13/08/2026 : 27 profils dans le fichier, tous
+repassés en vérification sourcée par Claude (recherche web active,
+recoupement d'au moins une source fiable par fait avancé — presse
+sérieuse, biographie officielle, ou déclaration directe de la personne).
+Deux corrections faites suite à cette vérification : Katie Ledecky
+(syndrome POTS, pas Ehlers-Danlos, deux syndromes différents) et Marta
+Arce (albinisme oculo-cutané complet, précisé depuis son site officiel,
+remplace un placeholder générique "déficience visuelle rare"). Un
+candidat (Franklin D. Roosevelt) a été explicitement écarté lors de la
+recherche de nouveaux profils car son diagnostic de poliomyélite est
+disputé par la littérature médicale-historique moderne — à ne pas
+ajouter sans nouvelle preuve solide. Le détail des sources utilisées
+pour chaque profil est conservé dans le projet Claude (doc de suivi),
+pas dans ce repo, pour ne pas alourdir le JSON consommé par le site.
 
 ## CMS (Decap CMS)
 admin/index.html et admin/config.yml donnent à Erwan une interface web
@@ -67,11 +86,14 @@ widget "list" de Decap CMS, ne jamais revenir à un tableau JSON brut à la
 racine.
 
 ## Prochaines étapes connues
-Vérifier chaque profil existant avec une source fiable (voir section
-"Exactitude des faits" ci-dessus). Étoffer data/stories.json avec d'autres
-profils vérifiés. Créer une vraie page par histoire (story.html?id=... est
-déjà référencé dans le lien du hero mais la page n'existe pas encore).
-Domaine lesincassables.com (GoDaddy) à connecter au projet Netlify via DNS.
+Continuer à étoffer data/stories.json au fil du temps — 27 profils
+vérifiés est une base solide mais l'ambition du projet est une base bien
+plus large (tous les athlètes paralympiques passés et présents, musiciens,
+politiciens, entrepreneurs, etc. atteints de pathologies rares). Chaque
+nouvel ajout doit suivre la même exigence de vérification sourcée.
+Créer une vraie page par histoire (story.html?id=... est déjà référencé
+dans le lien du hero mais la page n'existe pas encore). Activer Netlify
+Identity + Git Gateway pour que /admin devienne utilisable par Erwan.
 Le logo actuel est un mot-symbole texte temporaire, le vrai logo sera
 fourni séparément et remplacera le wordmark CSS.
 
