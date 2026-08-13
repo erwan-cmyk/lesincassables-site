@@ -68,8 +68,8 @@
     {
       "id": "emilio-gavira",
       "name": "Emilio Gavira",
-      "pathologyLabel": "Achondroplasie",
-      "pathologyFilter": "achon",
+      "pathologyLabel": "Nanisme",
+      "pathologyFilter": "nanisme",
       "country": "Espagne",
       "hook": "Acteur et baryton, nommé aux Goya — double carrière cinéma et opéra.",
       "tint": "tint-2"
@@ -98,17 +98,152 @@
       "pathologyLabel": "Amyotrophie spinale",
       "pathologyFilter": "sma",
       "country": "États-Unis",
-      "hook": "Écrivain et créateur de contenu, des millions de vues sur une vie racontée sans filtre ni pathos.",
+      "hook": "Écrivain et créateur de contenu, plus de 760 millions de vues sur une vie racontée sans filtre ni pathos.",
       "tint": "tint-2"
     },
     {
       "id": "marta-arce",
       "name": "Marta Arce",
-      "pathologyLabel": "Déficience visuelle rare",
-      "pathologyFilter": "autre",
+      "pathologyLabel": "Albinisme oculo-cutané complet",
+      "pathologyFilter": "albinisme",
       "country": "Espagne",
-      "hook": "Judoka paralympique, porte-drapeau de la délégation espagnole à Paris 2024.",
+      "hook": "Judoka paralympique, porte-drapeau de la délégation espagnole et médaillée de bronze aux Jeux de Paris 2024.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "jessica-long",
+      "name": "Jessica Long",
+      "pathologyLabel": "Hémimélie fibulaire",
+      "pathologyFilter": "hemimelie",
+      "country": "États-Unis",
+      "hook": "Six Jeux paralympiques, 18 titres, 31 médailles au total — l'une des nageuses les plus décorées de l'histoire paralympique.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "tatyana-mcfadden",
+      "name": "Tatyana McFadden",
+      "pathologyLabel": "Spina bifida",
+      "pathologyFilter": "spina-bifida",
+      "country": "États-Unis",
+      "hook": "Seule athlète de l'histoire, valide ou non, à avoir remporté les quatre grands marathons majeurs la même année.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "marla-runyan",
+      "name": "Marla Runyan",
+      "pathologyLabel": "Maladie de Stargardt",
+      "pathologyFilter": "stargardt",
+      "country": "États-Unis",
+      "hook": "Première athlète malvoyante à disputer les Jeux Olympiques, 8e du 1500 m à Sydney 2000 face à des concurrentes voyantes.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "anthony-robles",
+      "name": "Anthony Robles",
+      "pathologyLabel": "Agénésie congénitale de jambe",
+      "pathologyFilter": "agenesie-jambe",
+      "country": "États-Unis",
+      "hook": "Champion NCAA de lutte invaincu sur une seule jambe (36 victoires, 0 défaite) — meilleur lutteur du tournoi.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "zion-clark",
+      "name": "Zion Clark",
+      "pathologyLabel": "Syndrome de régression caudale",
+      "pathologyFilter": "regression-caudale",
+      "country": "États-Unis",
+      "hook": "Recordman du monde Guinness du sprint sur les mains, lutteur universitaire puis combattant MMA professionnel.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "flo-hyman",
+      "name": "Flo Hyman",
+      "pathologyLabel": "Syndrome de Marfan",
+      "pathologyFilter": "marfan",
+      "country": "États-Unis",
+      "hook": "Médaille d'argent olympique en volleyball 1984 — un prix national du sport féminin porte aujourd'hui son nom.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "erik-weihenmayer",
+      "name": "Erik Weihenmayer",
+      "pathologyLabel": "Rétinoschisis juvénile",
+      "pathologyFilter": "retinoschisis",
+      "country": "États-Unis",
+      "hook": "Premier non-voyant à avoir gravi l'Everest et complété les Sept Sommets — aujourd'hui conférencier et entrepreneur.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "itzhak-perlman",
+      "name": "Itzhak Perlman",
+      "pathologyLabel": "Poliomyélite",
+      "pathologyFilter": "polio",
+      "country": "Israël",
+      "hook": "Paralysé des jambes par la polio à 4 ans, il joue assis depuis plus de 60 ans — 15 Grammy Awards, Kennedy Center Honors.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "nick-vujicic",
+      "name": "Nick Vujicic",
+      "pathologyLabel": "Syndrome de tétra-amélie",
+      "pathologyFilter": "tetra-amelie",
+      "country": "Australie",
+      "hook": "Né sans bras ni jambes, il est devenu conférencier international et entrepreneur, fondateur de Life Without Limbs.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "aimee-mullins",
+      "name": "Aimee Mullins",
+      "pathologyLabel": "Hémimélie fibulaire",
+      "pathologyFilter": "hemimelie",
+      "country": "États-Unis",
+      "hook": "Amputée des deux jambes dès l'âge d'un an, pionnière du sprint paralympique à Atlanta 1996 — devenue mannequin et actrice.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "sam-berns",
+      "name": "Sam Berns",
+      "pathologyLabel": "Progeria",
+      "pathologyFilter": "progeria",
+      "country": "États-Unis",
+      "hook": "Atteint de progeria, il livre à 17 ans un TEDx vu plus de 54 millions de fois sur sa philosophie du bonheur.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "sia",
+      "name": "Sia",
+      "pathologyLabel": "Syndrome d'Ehlers-Danlos",
+      "pathologyFilter": "eds",
+      "country": "Australie",
+      "hook": "A révélé publiquement souffrir du syndrome d'Ehlers-Danlos, sans jamais interrompre une carrière internationale de chanteuse et productrice.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "jean-dominique-bauby",
+      "name": "Jean-Dominique Bauby",
+      "pathologyLabel": "Locked-in syndrome",
+      "pathologyFilter": "locked-in",
+      "country": "France",
+      "hook": "Rédacteur en chef de Elle, frappé de locked-in syndrome après un AVC, il a écrit tout un livre en clignant de l'œil gauche.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "stephen-wiltshire",
+      "name": "Stephen Wiltshire",
+      "pathologyLabel": "Autisme",
+      "pathologyFilter": "autisme",
+      "country": "Royaume-Uni",
+      "hook": "Diagnostiqué autiste à 3 ans, il dessine des villes entières de mémoire après un seul survol — décoré MBE pour son art.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "christy-brown",
+      "name": "Christy Brown",
+      "pathologyLabel": "Paralysie cérébrale",
+      "pathologyFilter": "pc",
+      "country": "Irlande",
+      "hook": "Paralysé de naissance, seul son pied gauche lui obéissait — il en a fait son outil pour écrire et peindre. Son autobiographie a inspiré My Left Foot, récompensé de deux Oscars.",
       "tint": "tint-3"
     }
-    ]
+  ]
 }
