@@ -244,6 +244,123 @@
       "country": "Irlande",
       "hook": "Paralysé de naissance, seul son pied gauche lui obéissait — il en a fait son outil pour écrire et peindre. Son autobiographie a inspiré My Left Foot, récompensé de deux Oscars.",
       "tint": "tint-3"
+    },
+    {
+      "id": "charles-mingus",
+      "name": "Charles Mingus",
+      "pathologyLabel": "SLA",
+      "pathologyFilter": "sla",
+      "country": "États-Unis",
+      "hook": "Frappé de SLA en 1977, il continue de composer jusqu'à sa mort en fredonnant ses dernières mélodies dans un magnétophone — figure majeure du jazz du XXe siècle, ses archives acquises par la Bibliothèque du Congrès américain.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "michael-j-fox",
+      "name": "Michael J. Fox",
+      "pathologyLabel": "Maladie de Parkinson précoce",
+      "pathologyFilter": "parkinson",
+      "country": "Canada",
+      "hook": "Diagnostiqué d'une maladie de Parkinson précoce à l'aube de la trentaine, caché pendant sept ans avant sa révélation publique en 1998 — sa fondation est devenue le premier financeur privé mondial de la recherche sur Parkinson, avec près de deux milliards de dollars levés à ce jour.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "andrea-bocelli",
+      "name": "Andrea Bocelli",
+      "pathologyLabel": "Glaucome congénital et cécité post-traumatique",
+      "pathologyFilter": "glaucome-congenital",
+      "country": "Italie",
+      "hook": "Diminué par un glaucome congénital dès la naissance puis rendu totalement aveugle à 12 ans par un ballon de football reçu en plein visage lors d'un match — plus de 90 millions de disques vendus, duos avec Pavarotti et Céline Dion, ouverture de la Coupe du monde 2006.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "stevie-wonder",
+      "name": "Stevie Wonder",
+      "pathologyLabel": "Rétinopathie du prématuré",
+      "pathologyFilter": "retinopathie-du-premature",
+      "country": "États-Unis",
+      "hook": "Devenu aveugle à six semaines après une naissance prématurée, il décroche son premier n°1 au Billboard à 13 ans — 25 Grammy Awards, seul artiste à avoir remporté trois fois de suite celui de l'Album de l'année, Kennedy Center Honors, Médaille présidentielle de la Liberté.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "joni-mitchell",
+      "name": "Joni Mitchell",
+      "pathologyLabel": "Poliomyélite contractée dans l'enfance",
+      "pathologyFilter": "polio",
+      "country": "Canada",
+      "hook": "Paralysée par la polio à neuf ans, elle réapprend à marcher — puis détourne la faiblesse durable de sa main gauche en un langage de près de cinquante accordages de guitare qui a changé la chanson populaire : onze Grammy Awards, Kennedy Center Honors, intronisation au Rock and Roll Hall of Fame.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "neil-young",
+      "name": "Neil Young",
+      "pathologyLabel": "Poliomyélite et épilepsie",
+      "pathologyFilter": "polio",
+      "country": "Canada",
+      "hook": "Partiellement paralysé par la polio à 5 ans puis frappé de crises d'épilepsie dès ses débuts de musicien, il construit malgré tout une carrière de plus de soixante ans, toujours active aujourd'hui — double intronisé au Rock and Roll Hall of Fame, officier de l'Ordre du Canada, surnommé le « parrain du grunge ».",
+      "tint": "tint-3"
+    },
+    {
+      "id": "ludwig-van-beethoven",
+      "name": "Ludwig van Beethoven",
+      "pathologyLabel": "Surdité progressive et quasi totale",
+      "pathologyFilter": "surdite-progressive",
+      "country": "Allemagne",
+      "hook": "Devenu sourd dès la fin de sa vingtaine, il compose et dirige la création de sa 9e Symphonie en 1824 sans pouvoir entendre l'ovation du public — l'une des œuvres les plus jouées de l'histoire de la musique occidentale.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "temple-grandin",
+      "name": "Temple Grandin",
+      "pathologyLabel": "Autisme",
+      "pathologyFilter": "autisme",
+      "country": "États-Unis",
+      "hook": "Diagnostiquée à deux ans d'une supposée « lésion cérébrale » — le seul terme que la médecine américaine des années 1950 avait à offrir —, elle est devenue professeure à Colorado State University : près de la moitié du bétail manipulé en Amérique du Nord transite aujourd'hui par des installations qu'elle a conçues.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "daniel-tammet",
+      "name": "Daniel Tammet",
+      "pathologyLabel": "Asperger, syndrome du savant, synesthésie",
+      "pathologyFilter": "asperger-savant-synesthesie",
+      "country": "Royaume-Uni",
+      "hook": "Diagnostiqué autiste Asperger et synesthète à 25 ans, il récite de mémoire les 22 514 premières décimales de pi en un peu plus de cinq heures, assis devant le tableau noir d'Einstein à Oxford — puis apprend l'islandais en une semaine pour la télévision, avant d'écrire un best-seller mondial traduit en une vingtaine de langues.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "john-nash",
+      "name": "John Nash",
+      "pathologyLabel": "Schizophrénie paranoïde",
+      "pathologyFilter": "schizophrenie",
+      "country": "États-Unis",
+      "hook": "Diagnostiqué schizophrène paranoïde à 30 ans, hospitalisé de force à plusieurs reprises pendant plus d'une décennie, il renoue avec la recherche et reçoit, 44 ans après sa thèse, le prix Nobel Memorial d'économie 1994 — puis le prix Abel en 2015, quelques jours avant sa mort.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "annette-funicello",
+      "name": "Annette Funicello",
+      "pathologyLabel": "Sclérose en plaques",
+      "pathologyFilter": "sclerose-en-plaques",
+      "country": "États-Unis",
+      "hook": "Diagnostiquée d'une sclérose en plaques à 44 ans, elle tait la maladie pendant cinq ans avant de la révéler publiquement en 1992, en partie pour faire taire des rumeurs de presse qui l'accusaient d'être ivre en public — ancienne Mouseketeer vedette de Disney, icône des beach party movies, fondatrice d'un fonds de recherche qui porte toujours son nom.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "wilma-rudolph",
+      "name": "Wilma Rudolph",
+      "pathologyLabel": "Poliomyélite contractée dans l'enfance",
+      "pathologyFilter": "polio",
+      "country": "États-Unis",
+      "hook": "Frappée de poliomyélite à 5 ans, elle porte une attelle à la jambe jusque vers onze ou douze ans, les médecins doutant qu'elle remarche normalement un jour — devenue sprinteuse, elle remporte trois médailles d'or aux Jeux olympiques de Rome en 1960, une première pour une Américaine en athlétisme lors d'une même olympiade.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "richard-branson",
+      "name": "Richard Branson",
+      "pathologyLabel": "Dyslexie et troubles de l'apprentissage",
+      "pathologyFilter": "dyslexie",
+      "country": "Royaume-Uni",
+      "hook": "Dyslexique et jugé cancre par ses professeurs dans l'Angleterre des années 1960, il quitte l'école à seize ans — devenu fondateur du groupe Virgin et milliardaire, il s'envole lui-même dans l'espace en 2021, à bord d'un vaisseau conçu par sa propre entreprise.",
+      "tint": "tint-1"
     }
   ]
 }
