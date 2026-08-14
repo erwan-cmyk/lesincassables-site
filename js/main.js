@@ -37,7 +37,7 @@ el.href = `story.html?id=${story.id}`;
 function renderGrid(stories) {
 const grid = document.getElementById('grid');
 grid.innerHTML = stories.map(s => `
-<div class="card" data-cat="${s.pathologyFilter}">
+<a class="card" data-cat="${s.pathologyFilter}" href="story.html?id=${s.id}">
 <div class="card-tag mono">${s.pathologyLabel}</div>
 <div class="card-portrait">${portraitHTML(s.tint)}</div>
 <h3 class="display">${s.name}</h3>
@@ -46,7 +46,7 @@ grid.innerHTML = stories.map(s => `
 <span class="card-country mono">${s.country}</span>
 <span class="card-arrow">→</span>
 </div>
-</div>
+</a>
 `).join('');
 }
 
