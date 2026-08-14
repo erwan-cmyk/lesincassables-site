@@ -10,6 +10,15 @@ relié plus tard par un lien croisé en bas de page (retiré pour l'instant,
 pas de coaching lancé, mieux vaut ne pas pointer vers une page qui n'existe
 pas encore).
 
+## Directive éditoriale (14/08/2026, instruction explicite d'Erwan)
+Chaque histoire doit être rédigée comme un article biographique complet
+(700-900 mots), style journalistique — jamais un texte clinique centré sur
+la pathologie. On ouvre toujours sur une scène ou un fait concret de la vie
+de la personne, jamais sur le diagnostic. La pathologie est tissée dans le
+récit de vie, pas le sujet principal. Objectif à terme : 100+ histoires
+vérifiées et rédigées dans ce format, en autonomie (Erwan n'a pas à être
+consulté par histoire).
+
 ## Identité visuelle
 Palette : noir chaud (#0a0a0a), texte blanc cassé (#f0ece3), or (#c17a3a).
 Typographie : Fraunces (titres/display), IBM Plex Sans (corps de texte),
@@ -20,36 +29,54 @@ misérabiliste ni "développement personnel".
 
 ## Structure du projet
 index.html : page d'accueil, structure only, le contenu vient du JS.
-css/style.css : tous les styles.
-js/main.js : génère les cartes, filtres et stats depuis data/stories.json.
-data/stories.json : les données des histoires, le seul fichier à modifier
-pour ajouter ou éditer une histoire.
+story.html : page individuelle d'une histoire (story.html?id=...). Charge
+  les métadonnées depuis data/stories.json (nom, pathologie, portrait) et
+  le texte complet depuis data/articles/<id>.txt. Si l'article n'existe pas
+  encore, affiche l'accroche courte (hook) + une mention "en cours de
+  rédaction" plutôt que de planter.
+css/style.css : tous les styles, y compris le bloc "Story page" pour
+  story.html.
+js/main.js : génère les cartes, filtres et stats de la page d'accueil
+  depuis data/stories.json.
+js/story.js : logique de story.html (lecture de l'id dans l'URL, fetch de
+  stories.json + de l'article, rendu).
+data/stories.json : les métadonnées de chaque histoire (carte, filtres),
+  LE SEUL fichier à modifier pour ajouter une nouvelle entrée à l'archive.
+data/articles/<id>.txt : le texte complet de l'article biographique de
+  chaque histoire, un fichier par personne, paragraphes séparés par une
+  ligne vide (pas de HTML, pas de markdown). État au 14/08/2026 : les 27
+  profils de stories.json ont chacun leur article complet.
 admin/index.html : bootstrap Decap CMS.
 admin/config.yml : config Decap CMS, backend git-gateway vers Netlify Identity.
+  Ne couvre pour l'instant que stories.json (les cartes), pas encore les
+  articles complets — à étendre plus tard si Git Gateway finit par
+  fonctionner (voir section CMS ci-dessous).
 
 Historique : le 13/08/2026, le repo avait une structure cassée suite à un
 upload manuel qui avait aplati les dossiers (admin/index.html avait écrasé
 index.html à la racine, et css/js/data manquaient). Corrigé, voir commits
-de cette date. Le même jour, découverte séparée : le projet Netlify n'avait
-jamais réussi un seul déploiement depuis sa création, à cause d'une commande
-de build erronée ("cecil build", un outil absent de l'environnement) et
-d'un dossier de publication ("_site") qui n'a jamais existé. Corrigé dans
-les réglages Netlify (build command vidée, publish directory mis à la
-racine) — sans lien avec la structure du repo, un réglage par défaut
-mal choisi à la création du projet.
+de cette date.
 
 ## Règle d'or : ajouter une histoire
-Pour ajouter une histoire, on ajoute une entrée dans data/stories.json.
-On ne touche JAMAIS index.html ou main.js pour ça. Champs requis :
-id, name, pathologyLabel, pathologyFilter, country, hook, tint
-(tint-1, tint-2 ou tint-3, à faire tourner). featured: true sur une seule
-entrée à la fois pour la case "Dernière histoire" du hero. Les stats du hero
-(nombre d'histoires, de pathologies, de pays) et les filtres sont calculés
-automatiquement depuis ce fichier, rien à mettre à jour à la main. Si
-pathologyFilter reprend une valeur déjà utilisée ailleurs dans le fichier,
-pathologyLabel doit être rigoureusement identique au texte déjà utilisé
-pour ce même filtre, sinon le chip de filtre affiche un libellé
-incohérent selon l'ordre des entrées.
+1. Ajouter une entrée dans data/stories.json (id, name, pathologyLabel,
+   pathologyFilter, country, hook, tint en tint-1/2/3 à faire tourner,
+   featured: true sur une seule entrée à la fois). On ne touche JAMAIS
+   index.html ou main.js pour ça — les stats et filtres du hero sont
+   calculés automatiquement depuis ce fichier.
+2. Créer data/articles/<id>.txt avec le texte complet de l'article (voir
+   directive éditoriale ci-dessus). Rien d'autre à modifier — story.html
+   et story.js s'en chargent automatiquement.
+
+## Méthode de publication (important, contournement documenté)
+Le push git direct depuis l'environnement Claude est bloqué par le proxy
+d'autorisation de la session ("repository not in this session's authorized
+set"). Solution qui fonctionne de façon fiable : utiliser l'upload web de
+GitHub (https://github.com/erwan-cmyk/lesincassables-site/upload/main/<dossier>)
+via l'outil file_upload du navigateur, qui permet d'envoyer plusieurs
+fichiers en un seul commit, en passant directement les fichiers écrits en
+local (pas de risque de corruption du texte, contrairement à la saisie
+caractère par caractère dans l'éditeur web GitHub, qui reste fragile sur du
+texte français accentué et a corrompu du contenu par le passé).
 
 ## Photos, point sensible, ne jamais court-circuiter
 Aucune vraie photo de personne réelle sans droits vérifiés (licence
@@ -59,49 +86,47 @@ généré en CSS (.portrait-silhouette), ne jamais remplacer par une image
 trouvée en ligne sans confirmation explicite d'Erwan sur les droits.
 
 ## Exactitude des faits, le cœur de la crédibilité du média
-Le site se revendique "histoires vérifiées". Chaque entrée de
-data/stories.json doit être vérifiable par une source fiable avant
-publication. État au 13/08/2026 : 27 profils dans le fichier, tous
-repassés en vérification sourcée par Claude (recherche web active,
-recoupement d'au moins une source fiable par fait avancé — presse
-sérieuse, biographie officielle, ou déclaration directe de la personne).
-Deux corrections faites suite à cette vérification : Katie Ledecky
-(syndrome POTS, pas Ehlers-Danlos, deux syndromes différents) et Marta
-Arce (albinisme oculo-cutané complet, précisé depuis son site officiel,
-remplace un placeholder générique "déficience visuelle rare"). Un
-candidat (Franklin D. Roosevelt) a été explicitement écarté lors de la
-recherche de nouveaux profils car son diagnostic de poliomyélite est
-disputé par la littérature médicale-historique moderne — à ne pas
-ajouter sans nouvelle preuve solide. Le détail des sources utilisées
-pour chaque profil est conservé dans le projet Claude (doc de suivi),
-pas dans ce repo, pour ne pas alourdir le JSON consommé par le site.
+Le site se revendique "histoires vérifiées". Chaque article est rédigé par
+un agent de recherche dédié (recherche web multi-sources), avec consigne
+stricte : citations directes uniquement si vérifiées mot pour mot et
+attribuées, jamais de paraphrase présentée comme citation, formulation
+prudente en cas de chiffre non confirmé entre sources. Les listes de
+sources par article sont conservées (voir le projet Claude, doc sources).
+État au 14/08/2026 : 27/27 profils de stories.json ont un article complet
+et sourcé. Plusieurs premiers jets ont été rejetés ou refaits après
+vérification insuffisante (ex : Anthony Robles et Zion Clark, une première
+tentative limitée à une seule source a été entièrement refaite).
 
 ## CMS (Decap CMS)
 admin/index.html et admin/config.yml donnent à Erwan une interface web
 pour ajouter ou éditer une histoire sans toucher au JSON à la main. Ça
-nécessite côté Netlify : Identity activé et Git Gateway activé (deux
-interrupteurs dans le dashboard Netlify, aucun code). data/stories.json est
-structuré { "stories": [...] } spécifiquement pour être compatible avec le
-widget "list" de Decap CMS, ne jamais revenir à un tableau JSON brut à la
-racine.
+nécessite côté Netlify : Identity activé (fait, Erwan invité) et Git
+Gateway activé. Git Gateway a échoué à 3 reprises (bouton bloqué sur
+"Enabling..." puis se réinitialise sans jamais confirmer) — cause non
+identifiée, pas d'action à mener côté Erwan pour l'instant, à retenter
+périodiquement. data/stories.json est structuré { "stories": [...] }
+spécifiquement pour être compatible avec le widget "list" de Decap CMS, ne
+jamais revenir à un tableau JSON brut à la racine.
 
 ## Prochaines étapes connues
-Continuer à étoffer data/stories.json au fil du temps — 27 profils
-vérifiés est une base solide mais l'ambition du projet est une base bien
-plus large (tous les athlètes paralympiques passés et présents, musiciens,
-politiciens, entrepreneurs, etc. atteints de pathologies rares). Chaque
-nouvel ajout doit suivre la même exigence de vérification sourcée.
-Créer une vraie page par histoire (story.html?id=... est déjà référencé
-dans le lien du hero mais la page n'existe pas encore). Activer Netlify
-Identity + Git Gateway pour que /admin devienne utilisable par Erwan.
-Le logo actuel est un mot-symbole texte temporaire, le vrai logo sera
-fourni séparément et remplacera le wordmark CSS.
+Étoffer data/stories.json avec de nouveaux profils vérifiés au-delà des 27
+actuels, vers l'objectif de 100+ histoires. Retenter Git Gateway
+périodiquement. Étendre admin/config.yml pour permettre l'édition des
+articles complets (pas seulement des cartes) une fois Git Gateway
+fonctionnel. Domaine lesincassables.com connecté et fonctionnel (DNS
+GoDaddy → Netlify, SSL provisionné). Le logo actuel est un mot-symbole
+texte temporaire, le vrai logo sera fourni séparément et remplacera le
+wordmark CSS.
 
 ## Déploiement
 Netlify, déployé automatiquement depuis GitHub (repo erwan-cmyk/lesincassables-site,
-branche main) à chaque commit. Domaine cible : lesincassables.com (DNS chez GoDaddy).
+branche main) à chaque commit. Domaine lesincassables.com (DNS chez GoDaddy) —
+connecté et fonctionnel.
 
 ## Style de travail avec Erwan
-Propose toujours les changements avant de les appliquer (mode Manual).
 Erwan n'est pas développeur, explique en langage simple ce que tu fais et
-pourquoi, pas seulement le code.
+pourquoi, pas seulement le code. Depuis le 14/08/2026, Erwan a explicitement
+demandé de ne plus être sollicité pour des autorisations répétées sur ce
+type de tâche (ajout d'histoires, publication) — travailler en autonomie
+sur ce périmètre précis, mais rester transparent sur les décisions prises
+(sources, choix éditoriaux, limites de vérification rencontrées).
