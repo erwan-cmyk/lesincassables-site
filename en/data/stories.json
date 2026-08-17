@@ -1,0 +1,505 @@
+{
+  "stories": [
+    {
+      "id": "mckenzie-coan",
+      "name": "McKenzie Coan",
+      "pathologyLabel": "Osteogenesis imperfecta",
+      "pathologyFilter": "oi",
+      "country": "United States",
+      "hook": "Paralympic swimmer, world record holder — the same condition as Unbreakable's founder.",
+      "tint": "tint-1",
+      "featured": true,
+      "featuredHook": "Doctors never expected her to stand. Today she's a world record holder in Paralympic swimming."
+    },
+    {
+      "id": "mimie-mathy",
+      "name": "Mimie Mathy",
+      "pathologyLabel": "Achondroplasia",
+      "pathologyFilter": "achon",
+      "country": "France",
+      "hook": "More than 40 years in show business, Legion of Honour — an icon of French television.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "raul-krauthausen",
+      "name": "Raul Krauthausen",
+      "pathologyLabel": "Osteogenesis imperfecta",
+      "pathologyFilter": "oi",
+      "country": "Germany",
+      "hook": "From living inaccessibility to social entrepreneurship — Order of Merit of Germany.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "stephen-hawking",
+      "name": "Stephen Hawking",
+      "pathologyLabel": "ALS",
+      "pathologyFilter": "sla",
+      "country": "United Kingdom",
+      "hook": "More than 50 years with the disease, one of the most remarkable scientific careers of the century.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "tionne-watkins",
+      "name": "Tionne Watkins",
+      "pathologyLabel": "Sickle cell disease",
+      "pathologyFilter": "drepano",
+      "country": "United States",
+      "hook": "Singer of the group TLC, an active advocate in the fight against sickle cell disease.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "katie-ledecky",
+      "name": "Katie Ledecky",
+      "pathologyLabel": "POTS syndrome",
+      "pathologyFilter": "pots",
+      "country": "United States",
+      "hook": "The most decorated female swimmer in Olympic history — despite a POTS diagnosis in 2015.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "gaelynn-lea",
+      "name": "Gaelynn Lea",
+      "pathologyLabel": "Osteogenesis imperfecta",
+      "pathologyFilter": "oi",
+      "country": "United States",
+      "hook": "Violinist, winner of NPR's Tiny Desk Contest — against thousands of able-bodied contestants.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "emilio-gavira",
+      "name": "Emilio Gavira",
+      "pathologyLabel": "Dwarfism",
+      "pathologyFilter": "nanisme",
+      "country": "Spain",
+      "hook": "Actor and baritone, Goya-nominated — a dual career spanning film and opera.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "martin-caparros",
+      "name": "Martín Caparrós",
+      "pathologyLabel": "ALS",
+      "pathologyFilter": "sla",
+      "country": "Argentina",
+      "hook": "Renowned Argentine writer and journalist, still working through the diagnosis.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "alvaro-valera",
+      "name": "Álvaro Valera",
+      "pathologyLabel": "Charcot-Marie-Tooth disease",
+      "pathologyFilter": "cmt",
+      "country": "Spain",
+      "hook": "7 Paralympic Games, gold in Sydney 2000, now an entrepreneur — a path that mirrors the founder's own.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "shane-burcaw",
+      "name": "Shane Burcaw",
+      "pathologyLabel": "Spinal muscular atrophy",
+      "pathologyFilter": "sma",
+      "country": "United States",
+      "hook": "Writer and content creator, over 760 million views for a life told without filter or pity.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "marta-arce",
+      "name": "Marta Arce",
+      "pathologyLabel": "Complete oculocutaneous albinism",
+      "pathologyFilter": "albinisme",
+      "country": "Spain",
+      "hook": "Paralympic judoka, flag bearer for the Spanish delegation and bronze medalist at the Paris 2024 Games.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "jessica-long",
+      "name": "Jessica Long",
+      "pathologyLabel": "Fibular hemimelia",
+      "pathologyFilter": "hemimelie",
+      "country": "United States",
+      "hook": "Six Paralympic Games, 18 titles, 31 medals in total — one of the most decorated swimmers in Paralympic history.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "tatyana-mcfadden",
+      "name": "Tatyana McFadden",
+      "pathologyLabel": "Spina bifida",
+      "pathologyFilter": "spina-bifida",
+      "country": "United States",
+      "hook": "The only athlete in history, able-bodied or not, to win all four major marathons in the same year.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "marla-runyan",
+      "name": "Marla Runyan",
+      "pathologyLabel": "Stargardt disease",
+      "pathologyFilter": "stargardt",
+      "country": "United States",
+      "hook": "First legally blind athlete to compete at the Olympics, 8th in the 1500m at Sydney 2000 against sighted runners.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "anthony-robles",
+      "name": "Anthony Robles",
+      "pathologyLabel": "Congenital leg agenesis",
+      "pathologyFilter": "agenesie-jambe",
+      "country": "United States",
+      "hook": "Undefeated NCAA wrestling champion on one leg (36 wins, 0 losses) — Most Outstanding Wrestler of the tournament.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "zion-clark",
+      "name": "Zion Clark",
+      "pathologyLabel": "Caudal regression syndrome",
+      "pathologyFilter": "regression-caudale",
+      "country": "United States",
+      "hook": "Guinness World Record holder for the hand-sprint, college wrestler turned professional MMA fighter.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "flo-hyman",
+      "name": "Flo Hyman",
+      "pathologyLabel": "Marfan syndrome",
+      "pathologyFilter": "marfan",
+      "country": "United States",
+      "hook": "Olympic silver medal in volleyball 1984 — a national award for women's sport now bears her name.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "erik-weihenmayer",
+      "name": "Erik Weihenmayer",
+      "pathologyLabel": "Juvenile retinoschisis",
+      "pathologyFilter": "retinoschisis",
+      "country": "United States",
+      "hook": "First blind person to summit Everest and complete the Seven Summits — now a speaker and entrepreneur.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "itzhak-perlman",
+      "name": "Itzhak Perlman",
+      "pathologyLabel": "Polio",
+      "pathologyFilter": "polio",
+      "country": "Israel",
+      "hook": "Paralyzed in the legs by polio at age 4, he has performed seated for more than 60 years — 15 Grammy Awards, Kennedy Center Honors.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "nick-vujicic",
+      "name": "Nick Vujicic",
+      "pathologyLabel": "Tetra-amelia syndrome",
+      "pathologyFilter": "tetra-amelie",
+      "country": "Australia",
+      "hook": "Born without arms or legs, he became an international speaker and entrepreneur, founder of Life Without Limbs.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "aimee-mullins",
+      "name": "Aimee Mullins",
+      "pathologyLabel": "Fibular hemimelia",
+      "pathologyFilter": "hemimelie",
+      "country": "United States",
+      "hook": "Both legs amputated before her first birthday, a pioneer of Paralympic sprinting at Atlanta 1996 — later a model and actress.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "sam-berns",
+      "name": "Sam Berns",
+      "pathologyLabel": "Progeria",
+      "pathologyFilter": "progeria",
+      "country": "United States",
+      "hook": "Living with progeria, he delivered a TEDx talk at 17 — viewed more than 54 million times — on his philosophy of happiness.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "sia",
+      "name": "Sia",
+      "pathologyLabel": "Ehlers-Danlos syndrome",
+      "pathologyFilter": "eds",
+      "country": "Australia",
+      "hook": "Publicly revealed she lives with Ehlers-Danlos syndrome, without ever pausing an international career as a singer and producer.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "jean-dominique-bauby",
+      "name": "Jean-Dominique Bauby",
+      "pathologyLabel": "Locked-in syndrome",
+      "pathologyFilter": "locked-in",
+      "country": "France",
+      "hook": "Editor-in-chief of Elle, struck by locked-in syndrome after a stroke, he wrote an entire book by blinking his left eye.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "stephen-wiltshire",
+      "name": "Stephen Wiltshire",
+      "pathologyLabel": "Autism",
+      "pathologyFilter": "autisme",
+      "country": "United Kingdom",
+      "hook": "Diagnosed autistic at age 3, he draws entire cityscapes from memory after a single flyover — awarded an MBE for his art.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "christy-brown",
+      "name": "Christy Brown",
+      "pathologyLabel": "Cerebral palsy",
+      "pathologyFilter": "pc",
+      "country": "Ireland",
+      "hook": "Paralyzed from birth, only his left foot obeyed him — he made it his tool for writing and painting. His autobiography inspired My Left Foot, winner of two Academy Awards.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "charles-mingus",
+      "name": "Charles Mingus",
+      "pathologyLabel": "ALS",
+      "pathologyFilter": "sla",
+      "country": "United States",
+      "hook": "Struck by ALS in 1977, he kept composing until his death, humming his last melodies into a tape recorder — a towering figure of 20th-century jazz, his archives acquired by the U.S. Library of Congress.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "michael-j-fox",
+      "name": "Michael J. Fox",
+      "pathologyLabel": "Early-onset Parkinson's disease",
+      "pathologyFilter": "parkinson",
+      "country": "Canada",
+      "hook": "Diagnosed with early-onset Parkinson's disease at the edge of his thirties, hidden for seven years before going public in 1998 — his foundation has become the world's largest private funder of Parkinson's research, with close to two billion dollars raised to date.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "andrea-bocelli",
+      "name": "Andrea Bocelli",
+      "pathologyLabel": "Congenital glaucoma and post-traumatic blindness",
+      "pathologyFilter": "glaucome-congenital",
+      "country": "Italy",
+      "hook": "Impaired by congenital glaucoma from birth, then rendered completely blind at 12 by a football struck full in the face during a match — more than 90 million records sold, duets with Pavarotti and Céline Dion, opening performance at the 2006 World Cup.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "stevie-wonder",
+      "name": "Stevie Wonder",
+      "pathologyLabel": "Retinopathy of prematurity",
+      "pathologyFilter": "retinopathie-du-premature",
+      "country": "United States",
+      "hook": "Blinded at six weeks after a premature birth, he scored his first Billboard No. 1 at 13 — 25 Grammy Awards, the only artist to win Album of the Year three times in a row, Kennedy Center Honors, Presidential Medal of Freedom.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "joni-mitchell",
+      "name": "Joni Mitchell",
+      "pathologyLabel": "Childhood polio",
+      "pathologyFilter": "polio",
+      "country": "Canada",
+      "hook": "Paralyzed by polio at nine, she learned to walk again — then turned the lasting weakness in her left hand into a language of nearly fifty guitar tunings that changed popular song: eleven Grammy Awards, Kennedy Center Honors, induction into the Rock and Roll Hall of Fame.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "neil-young",
+      "name": "Neil Young",
+      "pathologyLabel": "Polio and epilepsy",
+      "pathologyFilter": "polio",
+      "country": "Canada",
+      "hook": "Partially paralyzed by polio at 5, then struck by seizures from the earliest days of his career as a musician, he has built a career spanning more than sixty years and still going — twice inducted into the Rock and Roll Hall of Fame, Officer of the Order of Canada, nicknamed the “Godfather of Grunge.”",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "ludwig-van-beethoven",
+      "name": "Ludwig van Beethoven",
+      "pathologyLabel": "Progressive, near-total deafness",
+      "pathologyFilter": "surdite-progressive",
+      "country": "Germany",
+      "hook": "Deaf by the end of his twenties, he composed and conducted the premiere of his 9th Symphony in 1824 without being able to hear the audience's ovation — one of the most performed works in the history of Western music.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "temple-grandin",
+      "name": "Temple Grandin",
+      "pathologyLabel": "Autism",
+      "pathologyFilter": "autisme",
+      "country": "United States",
+      "hook": "Diagnosed at two with a supposed “brain injury” — the only term 1950s American medicine had to offer — she became a professor at Colorado State University: nearly half of the cattle handled in North America now passes through facilities she designed.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "daniel-tammet",
+      "name": "Daniel Tammet",
+      "pathologyLabel": "Asperger's, savant syndrome, synesthesia",
+      "pathologyFilter": "asperger-savant-synesthesie",
+      "country": "United Kingdom",
+      "hook": "Diagnosed with Asperger's and synesthesia at 25, he recited the first 22,514 digits of pi from memory in just over five hours, seated in front of Einstein's blackboard at Oxford — then learned Icelandic in a week for television, before writing a worldwide bestseller translated into some twenty languages.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "john-nash",
+      "name": "John Nash",
+      "pathologyLabel": "Paranoid schizophrenia",
+      "pathologyFilter": "schizophrenie",
+      "country": "United States",
+      "hook": "Diagnosed with paranoid schizophrenia at 30, forcibly hospitalized several times over more than a decade, he returned to research and received, 44 years after his thesis, the 1994 Nobel Memorial Prize in Economics — then the Abel Prize in 2015, days before his death.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "annette-funicello",
+      "name": "Annette Funicello",
+      "pathologyLabel": "Multiple sclerosis",
+      "pathologyFilter": "sclerose-en-plaques",
+      "country": "United States",
+      "hook": "Diagnosed with multiple sclerosis at 44, she kept the illness private for five years before revealing it publicly in 1992, partly to silence press rumors that she was drunk in public — former star Mouseketeer for Disney, icon of the beach party movies, founder of a research fund that still bears her name.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "wilma-rudolph",
+      "name": "Wilma Rudolph",
+      "pathologyLabel": "Childhood polio",
+      "pathologyFilter": "polio",
+      "country": "United States",
+      "hook": "Struck by polio at 5, she wore a leg brace until about eleven or twelve, with doctors doubting she would ever walk normally again — she became a sprinter and won three gold medals at the 1960 Rome Olympics, a first for an American woman in track and field at a single Olympiad.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "richard-branson",
+      "name": "Richard Branson",
+      "pathologyLabel": "Dyslexia and learning difficulties",
+      "pathologyFilter": "dyslexie",
+      "country": "United Kingdom",
+      "hook": "Dyslexic and written off as a poor student by his teachers in 1960s England, he left school at sixteen — now founder of the Virgin Group and a billionaire, he flew to space himself in 2021, aboard a vessel built by his own company.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "bebe-vio",
+      "name": "Bebe Vio",
+      "pathologyLabel": "Fulminant meningococcal meningitis",
+      "pathologyFilter": "meningite",
+      "country": "Italy",
+      "hook": "All four limbs amputated after fulminant meningitis at 11, she became the first fencer in the world to compete with all four prosthetic limbs — two individual foil Paralympic titles (Rio 2016, Tokyo 2020), multiple world and European titles.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "marie-bochet",
+      "name": "Marie Bochet",
+      "pathologyLabel": "Left forearm agenesis",
+      "pathologyFilter": "agenesie-avant-bras",
+      "country": "France",
+      "hook": "Born with agenesis of the left forearm, she put on her first skis at five — 8 Paralympic gold medals, 22 world titles in para alpine skiing, before becoming chef de mission of the French delegation at the Milan-Cortina 2026 Games.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "judith-scott",
+      "name": "Judith Scott",
+      "pathologyLabel": "Down syndrome and undiagnosed deafness",
+      "pathologyFilter": "trisomie-21",
+      "country": "United States",
+      "hook": "Born with Down syndrome and left deaf by an undiagnosed childhood case of scarlet fever, she spent thirty-five years institutionalized without learning a single word of language — before becoming, from age 44, a fiber sculptor exhibited at MoMA, the Brooklyn Museum, and the 2017 Venice Biennale.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "geerat-vermeij",
+      "name": "Geerat J. Vermeij",
+      "pathologyLabel": "Total blindness since childhood",
+      "pathologyFilter": "cecite-enfance",
+      "country": "Netherlands",
+      "hook": "Blind since age three, he built his career as a paleobiologist by touch alone — MacArthur Fellowship 1992, Daniel Giraud Elliot Medal 2000, elected to the National Academy of Sciences in 2022.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "chris-nikic",
+      "name": "Chris Nikic",
+      "pathologyLabel": "Down syndrome",
+      "pathologyFilter": "trisomie-21",
+      "country": "United States",
+      "hook": "Living with Down syndrome, he completed the first full Ironman ever finished by a man with this condition in 2020, 14 minutes before the cutoff — a record certified by Guinness World Records — then did it again in Kona in 2022, on his 23rd birthday.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "sarah-storey",
+      "name": "Sarah Storey",
+      "pathologyLabel": "Congenital absence of a functional left hand",
+      "pathologyFilter": "main-non-fonctionnelle",
+      "country": "United Kingdom",
+      "hook": "Born without a functional left hand after the umbilical cord wrapped around it in utero, she became the most decorated British Paralympian in history across all sports — 30 Paralympic medals including 19 gold, across 9 Games between 1992 and 2024, first in swimming then on the bike.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "oksana-masters",
+      "name": "Oksana Masters",
+      "pathologyLabel": "Bilateral tibial hemimelia",
+      "pathologyFilter": "hemimelie-tibiale",
+      "country": "United States",
+      "hook": "Born in Ukraine with bilateral tibial hemimelia, given up to an orphanage then adopted by an American woman at 7, she became the most decorated Winter Paralympian in Team USA history — 24 Paralympic medals across four sports.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "ntando-mahlangu",
+      "name": "Ntando Mahlangu",
+      "pathologyLabel": "Fibular hemimelia",
+      "pathologyFilter": "hemimelie",
+      "country": "South Africa",
+      "hook": "Both legs amputated below the knee at ten after congenital bilateral fibular hemimelia, he became Paralympic champion and world record holder in the long jump and 200m at Tokyo 2020 — before a road accident kept him out of Paris 2024.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "david-paterson",
+      "name": "David Paterson",
+      "pathologyLabel": "Legal blindness",
+      "pathologyFilter": "cecite-legale",
+      "country": "United States",
+      "hook": "Legally blind since he was three months old, he became the 55th Governor of the State of New York overnight — without ever having been elected to the office by voters.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "terry-pratchett",
+      "name": "Terry Pratchett",
+      "pathologyLabel": "Posterior cortical atrophy (early-onset Alzheimer's)",
+      "pathologyFilter": "atrophie-corticale-posterieure",
+      "country": "United Kingdom",
+      "hook": "Diagnosed at 59 with a rare, early-onset form of Alzheimer's, the author of Discworld kept writing bestseller after bestseller for eight years, between dictation software and a public fight for dementia research and the right to choose his own death.",
+      "tint": "tint-2",
+      "featured": false
+    }
+  ]
+}
