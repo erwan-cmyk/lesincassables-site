@@ -39,6 +39,12 @@ root.innerHTML = `
 document.title = "Les Incassables — Histoire introuvable";
 }
 
+function setLangSwitch(id) {
+const el = document.getElementById('lang-switch');
+if (!el) return;
+el.href = id ? `/en/story.html?id=${id}` : '/en/';
+}
+
 async function loadArticleText(id) {
 try {
 const res = await fetch(`data/articles/${id}.txt`);
@@ -75,10 +81,12 @@ try {
 const res = await fetch('data/stories.json');
 const data = await res.json();
 const story = data.stories.find(s => s.id === id);
-if (!story) { renderNotFound(); return; }
+if (!story) { renderNotFound(); setLangSwitch(null); return; }
 await renderStory(story);
+setLangSwitch(story.id);
 } catch (e) {
 renderNotFound();
+setLangSwitch(null);
 }
 }
 
