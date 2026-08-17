@@ -361,6 +361,106 @@
       "country": "Royaume-Uni",
       "hook": "Dyslexique et jugé cancre par ses professeurs dans l'Angleterre des années 1960, il quitte l'école à seize ans — devenu fondateur du groupe Virgin et milliardaire, il s'envole lui-même dans l'espace en 2021, à bord d'un vaisseau conçu par sa propre entreprise.",
       "tint": "tint-1"
+    },
+    {
+      "id": "bebe-vio",
+      "name": "Bebe Vio",
+      "pathologyLabel": "Méningite fulgurante à méningocoque",
+      "pathologyFilter": "meningite",
+      "country": "Italie",
+      "hook": "Amputée des quatre membres par une méningite fulgurante à 11 ans, elle est devenue la première escrimeuse au monde à concourir avec ses quatre membres prothétiques — deux titres paralympiques de fleuret individuel (Rio 2016, Tokyo 2020), plusieurs titres mondiaux et européens.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "marie-bochet",
+      "name": "Marie Bochet",
+      "pathologyLabel": "Agénésie de l'avant-bras gauche",
+      "pathologyFilter": "agenesie-avant-bras",
+      "country": "France",
+      "hook": "Née avec une agénésie de l'avant-bras gauche, elle chausse ses premiers skis à cinq ans — 8 médailles d'or paralympiques, 22 titres mondiaux de ski alpin handisport, avant de devenir cheffe de la délégation française aux Jeux de Milan-Cortina 2026.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "judith-scott",
+      "name": "Judith Scott",
+      "pathologyLabel": "Trisomie 21 et surdité non diagnostiquée",
+      "pathologyFilter": "trisomie-21",
+      "country": "États-Unis",
+      "hook": "Porteuse d'une trisomie 21 et rendue sourde par une scarlatine infantile jamais diagnostiquée, elle passe trente-cinq ans en institution sans apprendre un mot de langage — avant de devenir, à partir de 44 ans, une sculptrice sur fibres exposée au MoMA, au Brooklyn Museum et à la Biennale de Venise 2017.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "geerat-vermeij",
+      "name": "Geerat J. Vermeij",
+      "pathologyLabel": "Cécité totale depuis l'enfance",
+      "pathologyFilter": "cecite-enfance",
+      "country": "Pays-Bas",
+      "hook": "Aveugle depuis l'âge de trois ans, il a bâti sa carrière de paléobiologiste au bout des doigts — bourse MacArthur 1992, médaille Daniel Giraud Elliot 2000, élu à la National Academy of Sciences en 2022.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "chris-nikic",
+      "name": "Chris Nikic",
+      "pathologyLabel": "Trisomie 21 (syndrome de Down)",
+      "pathologyFilter": "trisomie-21",
+      "country": "États-Unis",
+      "hook": "Porteur d'une trisomie 21, il boucle en 2020 le premier Ironman complet jamais terminé par un homme avec cette condition, 14 minutes avant le couperet — record homologué par le Guinness World Records — puis remet ça à Kona en 2022, le jour de ses 23 ans.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "sarah-storey",
+      "name": "Sarah Storey",
+      "pathologyLabel": "Absence congénitale d'une main gauche fonctionnelle",
+      "pathologyFilter": "main-non-fonctionnelle",
+      "country": "Royaume-Uni",
+      "hook": "Née sans main gauche fonctionnelle après un enroulement du cordon ombilical in utero, elle devient la para-athlète britannique la plus titrée de l'histoire, tous sports confondus — 30 médailles paralympiques dont 19 en or, sur 9 éditions des Jeux entre 1992 et 2024, en natation puis à vélo.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "oksana-masters",
+      "name": "Oksana Masters",
+      "pathologyLabel": "Hémimélie tibiale bilatérale",
+      "pathologyFilter": "hemimelie-tibiale",
+      "country": "États-Unis",
+      "hook": "Née en Ukraine avec une hémimélie tibiale bilatérale, abandonnée en orphelinat puis adoptée par une Américaine à 7 ans, elle devient la para-athlète d'hiver la plus décorée de l'histoire du Team USA — 24 médailles paralympiques dans quatre sports.",
+      "tint": "tint-2",
+      "featured": false
+    },
+    {
+      "id": "ntando-mahlangu",
+      "name": "Ntando Mahlangu",
+      "pathologyLabel": "Hémimélie fibulaire",
+      "pathologyFilter": "hemimelie",
+      "country": "Afrique du Sud",
+      "hook": "Amputé des deux jambes sous le genou à dix ans après une hémimélie fibulaire bilatérale congénitale, il devient champion et recordman du monde paralympique de longueur et 200m à Tokyo 2020 — avant qu'un accident de la route ne l'écarte de Paris 2024.",
+      "tint": "tint-3",
+      "featured": false
+    },
+    {
+      "id": "david-paterson",
+      "name": "David Paterson",
+      "pathologyLabel": "Cécité légale",
+      "pathologyFilter": "cecite-legale",
+      "country": "États-Unis",
+      "hook": "Légalement aveugle depuis l'âge de trois mois, il est devenu du jour au lendemain le 55e gouverneur de l'État de New York — sans jamais avoir été élu à ce poste par les électeurs.",
+      "tint": "tint-1",
+      "featured": false
+    },
+    {
+      "id": "terry-pratchett",
+      "name": "Terry Pratchett",
+      "pathologyLabel": "Atrophie corticale postérieure (Alzheimer précoce)",
+      "pathologyFilter": "atrophie-corticale-posterieure",
+      "country": "Royaume-Uni",
+      "hook": "Diagnostiqué à 59 ans d'une forme rare et précoce d'Alzheimer, l'auteur du Disque-monde a continué d'écrire best-seller après best-seller pendant huit ans, entre logiciels de dictée et combat public pour la recherche sur les démences et le droit de choisir sa fin de vie.",
+      "tint": "tint-2",
+      "featured": false
     }
   ]
 }
