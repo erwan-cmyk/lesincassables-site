@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suggest a story — Unbreakable</title>
+<meta name="description" content="Know someone whose story deserves to be told? Suggest it to Unbreakable.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="thread-track"><div class="thread"></div></div>
+<header>
+<a href="/en/" class="wordmark">UNBREAKABLE<span class="crack">·</span></a>
+<nav>
+<ul>
+<li><a href="/en/#archive">Stories</a></li>
+<li><a href="/en/#manifesto">The project</a></li>
+<li><a href="/" class="lang-switch mono">FR</a></li>
+</ul>
+</nav>
+</header>
+<main class="propose-page">
+<div class="propose-eyebrow">Suggest a story</div>
+<h1 class="display">Know someone whose story deserves to be told?</h1>
+<p class="propose-intro">An artist, an entrepreneur, an athlete, a public figure — living or gone — who faced a rare condition or a disability without ever being reduced to it. Describe them below, we verify and we write.</p>
+<form class="propose-form" name="proposition-en" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/en/thanks.html">
+<input type="hidden" name="form-name" value="proposition-en" />
+<p class="visually-hidden"><label>Leave this empty if you are human: <input name="bot-field" /></label></p>
+<div class="form-field">
+<label for="your-name">Your name <span class="optional">(optional)</span></label>
+<input type="text" id="your-name" name="your-name" autocomplete="name">
+</div>
+<div class="form-field">
+<label for="your-email">Your email</label>
+<input type="email" id="your-email" name="your-email" autocomplete="email" required>
+</div>
+<div class="form-field">
+<label for="person-name">Name of the person you're suggesting</label>
+<input type="text" id="person-name" name="person-name" required>
+</div>
+<div class="form-field">
+<label for="pathology">Condition or disability (if known)</label>
+<input type="text" id="pathology" name="pathology" required>
+</div>
+<div class="form-field">
+<label for="why">Why their story deserves to be told</label>
+<textarea id="why" name="why" required></textarea>
+</div>
+<div class="form-field">
+<label for="source">Link or source <span class="optional">(optional)</span></label>
+<input type="text" id="source" name="source" placeholder="Wikipedia, news article, official site…">
+</div>
+<button type="submit" class="propose-submit">Send suggestion</button>
+</form>
+</main>
+<footer>
+<div class="footer-wordmark">UNBREAKABLE — Media</div>
+<div class="footer-links">
+<a href="https://instagram.com/lesincassables" target="_blank">Instagram</a>
+<a href="https://linkedin.com/company/lesincassables" target="_blank">LinkedIn</a>
+<a href="#" target="_blank">YouTube</a>
+<a href="mailto:contact@lesincassables.com">Contact</a>
+</div>
+</footer>
+</body>
+</html>
