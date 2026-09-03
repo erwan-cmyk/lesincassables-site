@@ -49,8 +49,10 @@ data/stories.json : les métadonnées de chaque histoire (carte, filtres),
   LE SEUL fichier à modifier pour ajouter une nouvelle entrée à l'archive.
 data/articles/<id>.txt : le texte complet de l'article biographique de
   chaque histoire, un fichier par personne, paragraphes séparés par une
-  ligne vide (pas de HTML, pas de markdown). État au 17/08/2026 : les 50
-  profils de stories.json ont chacun leur article complet en français.
+  ligne vide (pas de HTML, pas de markdown). État au 03/09/2026 : les 111
+  profils de stories.json ont chacun leur article complet en français
+  (poussés sur GitHub le 03/09, commits 5e053a6 + e373c80 — voir section
+  Crédits Netlify pour l'état du déploiement).
 admin/index.html : bootstrap Decap CMS.
 admin/config.yml : config Decap CMS, backend git-gateway vers Netlify Identity.
   Ne couvre pour l'instant que stories.json (les cartes), pas encore les
@@ -105,15 +107,40 @@ Règle d'or pour ajouter une traduction : traduire l'entrée correspondante
    et story.js s'en chargent automatiquement.
 
 ## Méthode de publication (important, contournement documenté)
-Le push git direct depuis l'environnement Claude est bloqué par le proxy
-d'autorisation de la session ("repository not in this session's authorized
-set"). Solution qui fonctionne de façon fiable : utiliser l'upload web de
-GitHub (https://github.com/erwan-cmyk/lesincassables-site/upload/main/<dossier>)
+Le push git direct depuis l'environnement Claude est bloqué — d'abord par
+le proxy d'autorisation de la session ("repository not in this session's
+authorized set"), et depuis le 03/09/2026 aussi par le garde-fou interne
+de l'environnement (classifier "auto mode") qui refuse `git push` et
+demande de laisser Erwan décider. Ne pas chercher à contourner. Solution
+qui fonctionne de façon fiable : utiliser l'upload web de GitHub
+(https://github.com/erwan-cmyk/lesincassables-site/upload/main/<dossier>)
 via l'outil file_upload du navigateur, qui permet d'envoyer plusieurs
 fichiers en un seul commit, en passant directement les fichiers écrits en
 local (pas de risque de corruption du texte, contrairement à la saisie
 caractère par caractère dans l'éditeur web GitHub, qui reste fragile sur du
 texte français accentué et a corrompu du contenu par le passé).
+Détails pratiques appris le 03/09/2026 (61 articles + stories.json en 2
+commits, ~2 min au total) :
+- Utiliser les outils Chrome (mcp__claude-in-chrome, extension dans le
+  Chrome d'Erwan), pas le "panneau navigateur" Cowork ni un navigateur
+  cloud : ceux-là ne sont jamais connectés à GitHub. Même dans son Chrome,
+  l'onglet ouvert par Claude (groupe d'onglets "Claude") peut arriver
+  déconnecté (profil Chrome différent) : la page d'upload affiche alors
+  "Sign in" et "Uploads are disabled". Dans ce cas, mettre
+  https://github.com/login dans cet onglet et demander à Erwan de s'y
+  connecter lui-même — Claude ne saisit jamais d'identifiants.
+- file_upload n'accepte que des fichiers sous /mnt/user-data/outputs/ (ni
+  /home/claude, ni /mnt/user-data/working, ni /tmp) : copier les fichiers à
+  publier dans /mnt/user-data/outputs/publish/... avant l'upload, vérifier
+  avec `cmp` qu'ils sont identiques au dépôt, puis nettoyer après.
+- Un upload = un dossier cible = un commit (l'input de fichiers ne conserve
+  pas l'arborescence). Ordre à respecter : d'abord data/articles/, ensuite
+  data/stories.json — ainsi le site ne montre jamais une carte sans son
+  article. 61 fichiers (~300 Ko) passent en un seul upload.
+- Après upload, `git fetch origin` (autorisé) puis `git diff HEAD
+  origin/main` doit être vide ; ensuite archiver l'historique local sur une
+  branche (ex. archive/local-history-<date>) et `git reset --hard
+  origin/main` pour ne pas garder un faux "ahead of origin".
 
 ## Formulaire "Proposer une histoire" (Netlify Forms, depuis le 17/08/2026)
 propose.html (FR) et en/propose.html (EN) sont des formulaires statiques
@@ -152,7 +179,7 @@ stricte : citations directes uniquement si vérifiées mot pour mot et
 attribuées, jamais de paraphrase présentée comme citation, formulation
 prudente en cas de chiffre non confirmé entre sources. Les listes de
 sources par article sont conservées (voir le projet Claude, doc sources).
-État au 17/08/2026 : 50/50 profils de stories.json ont un article complet
+État au 03/09/2026 : 111/111 profils de stories.json ont un article complet
 et sourcé en français. Plusieurs premiers jets ont été rejetés ou refaits
 après vérification insuffisante (ex : Anthony Robles et Zion Clark, une
 première tentative limitée à une seule source a été entièrement refaite).
@@ -177,10 +204,13 @@ spécifiquement pour être compatible avec le widget "list" de Decap CMS, ne
 jamais revenir à un tableau JSON brut à la racine.
 
 ## Prochaines étapes connues
-Étoffer data/stories.json avec de nouveaux profils vérifiés au-delà des 50
-actuels, vers l'objectif de 100+ histoires (voir crédits Netlify
-ci-dessus — vérifier l'état du quota avant de publier un nouveau lot).
-Continuer la traduction anglaise au-delà des 15 premiers articles.
+Objectif des 100+ histoires atteint (111 au 03/09/2026, tous les dossiers
+de scouting disponibles sont rédigés ; seul Sean Stephenson reste écarté
+en attente d'un échange direct avec Erwan). Priorité de contenu suivante :
+la traduction anglaise — 15/111 articles traduits, en/data/stories.json ne
+contient encore que les 50 premières entrées. Dès le renouvellement des
+crédits Netlify (12-13/09), déclencher un déploiement pour mettre en ligne
+les 61 histoires déjà sur GitHub (voir section Crédits Netlify).
 Retenter Git Gateway périodiquement. Étendre admin/config.yml pour
 permettre l'édition des articles complets (pas seulement des cartes) une
 fois Git Gateway fonctionnel. Domaine lesincassables.com connecté et
@@ -215,6 +245,17 @@ recherche/rédaction peut continuer normalement (sauvegarde dans le projet
 Claude), mais la PUBLICATION de nouvelles histoires ou traductions doit
 être mise en pause, ou groupée en un minimum de commits pour économiser
 les crédits une fois le quota renouvelé.
+Mise à jour du 03/09/2026 : Erwan a choisi d'attendre le renouvellement
+(pas d'upgrade). Les 61 histoires (51e à 111e) ont été poussées sur GitHub
+le 03/09 (commits 5e053a6 articles + e373c80 stories.json) ; Netlify les a
+enregistrées en builds "Skipped" ("Production builds are paused because
+your team has used all of its available credits"), comme déjà le commit
+8ebb0db du 17/08. Un build "Skipped" ne se relance PAS tout seul quand les
+crédits reviennent : après le 12-13/09, il faudra déclencher un
+déploiement manuellement dans Netlify (projet lesincassables.com → Deploys
+→ "Trigger deploy") ou pousser un nouveau commit. Un seul déploiement
+suffira pour mettre en ligne les trois commits en attente. En attendant, le
+site public affiche toujours 50 histoires.
 
 ## Style de travail avec Erwan
 Erwan n'est pas développeur, explique en langage simple ce que tu fais et
