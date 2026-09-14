@@ -500,6 +500,555 @@
       "hook": "Diagnosed at 59 with a rare, early-onset form of Alzheimer's, the author of Discworld kept writing bestseller after bestseller for eight years, between dictation software and a public fight for dementia research and the right to choose his own death.",
       "tint": "tint-2",
       "featured": false
+    },
+    {
+      "id": "wolfgang-schauble",
+      "name": "Wolfgang Schäuble",
+      "pathologyLabel": "Paraplegia (spinal cord injury)",
+      "pathologyFilter": "paraplegie",
+      "country": "Germany",
+      "hook": "Three bullets in the back in the middle of a campaign rally. Twenty-seven years later, he presided over the Bundestag from his wheelchair.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "yasuhiko-funago",
+      "name": "Yasuhiko Funago",
+      "pathologyLabel": "Amyotrophic lateral sclerosis (ALS)",
+      "pathologyFilter": "sla",
+      "country": "Japan",
+      "hook": "Paralyzed by ALS, he now communicates only with his eyes — and became one of the first two severely disabled lawmakers in the history of Japan's parliament.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "eiko-kimura",
+      "name": "Eiko Kimura",
+      "pathologyLabel": "Quadriplegia (early childhood accident)",
+      "pathologyFilter": "tetraplegie",
+      "country": "Japan",
+      "hook": "Quadriplegic since the age of eight months, she had seats removed from Japan's parliament so that her wheelchair could get in.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "jordon-steele-john",
+      "name": "Jordon Steele-John",
+      "pathologyLabel": "Congenital cerebral palsy",
+      "pathologyFilter": "pc",
+      "country": "Australia",
+      "hook": "Cerebral palsy from birth, the youngest senator in Australian history at 23 — and a voice for victims of abuse in institutional care.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "karine-elharrar",
+      "name": "Karine Elharrar",
+      "pathologyLabel": "Muscular dystrophy",
+      "pathologyFilter": "dystrophie-musculaire",
+      "country": "Israel",
+      "hook": "Israel's energy minister, she was denied entry to COP26 for lack of a ramp for her wheelchair.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "michael-masutha",
+      "name": "Michael Masutha",
+      "pathologyLabel": "Congenital blindness",
+      "pathologyFilter": "cecite-congenitale",
+      "country": "South Africa",
+      "hook": "Blind from birth in apartheid South Africa, he became the country's Minister of Justice.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "gilberto-rincon-gallardo",
+      "name": "Gilberto Rincón Gallardo",
+      "pathologyLabel": "Congenital arm malformation",
+      "pathologyFilter": "malformation-bras",
+      "country": "Mexico",
+      "hook": "Shortened arms from birth, imprisoned thirty-two times for his political battles — he became the first president of Mexico's anti-discrimination authority.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "helga-stevens",
+      "name": "Helga Stevens",
+      "pathologyLabel": "Congenital deafness",
+      "pathologyFilter": "surdite-congenitale",
+      "country": "Belgium",
+      "hook": "Born deaf, she became Belgium's first deaf lawyer, then a candidate for President of the European Parliament.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "adam-kosa",
+      "name": "Ádám Kósa",
+      "pathologyLabel": "Deafness",
+      "pathologyFilter": "surdite",
+      "country": "Hungary",
+      "hook": "The first deaf member in the history of the European Parliament, he served there for fifteen years, in sign language.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "mara-gabrilli",
+      "name": "Mara Gabrilli",
+      "pathologyLabel": "Quadriplegia (road accident)",
+      "pathologyFilter": "tetraplegie",
+      "country": "Brazil",
+      "hook": "A model left quadriplegic by a car accident, she wrote the law that changed the lives of 45 million Brazilians with disabilities.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "golda-meir",
+      "name": "Golda Meir",
+      "pathologyLabel": "Lymphoma",
+      "pathologyFilter": "lymphome",
+      "country": "Israel",
+      "hook": "Prime Minister of Israel, she hid the cancer eating away at her for thirteen years — even leading the Yom Kippur War with that secret.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "georges-pompidou",
+      "name": "Georges Pompidou",
+      "pathologyLabel": "Waldenström's disease (rare cancer)",
+      "pathologyFilter": "waldenstrom",
+      "country": "France",
+      "hook": "President of France, he hid his illness to the grave: the first bulletin on his state of health was not published until six days after his death.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "jean-paul-ii",
+      "name": "John Paul II",
+      "pathologyLabel": "Parkinson's disease",
+      "pathologyFilter": "parkinson",
+      "country": "Vatican City",
+      "hook": "Twenty-seven years as pope, including more than a decade of Parkinson's on display to the whole world — right up to that final appearance when he could no longer utter a word.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "kim-dae-jung",
+      "name": "Kim Dae-jung",
+      "pathologyLabel": "Permanent injuries from an assassination attempt (hip and leg)",
+      "pathologyFilter": "blessure-permanente",
+      "country": "South Korea",
+      "hook": "A truck that left him disabled, an abduction on the high seas: survivor of two attempts on his life, he became president and received the Nobel Peace Prize.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "chandrika-kumaratunga",
+      "name": "Chandrika Kumaratunga",
+      "pathologyLabel": "Partial blindness (bomb attack)",
+      "pathologyFilter": "cecite-partielle",
+      "country": "Sri Lanka",
+      "hook": "A suicide bombing cost her an eye three days before the election. She was re-elected President of Sri Lanka and called on her country to stay calm from her hospital bed.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "vaclav-havel",
+      "name": "Václav Havel",
+      "pathologyLabel": "Lung cancer",
+      "pathologyFilter": "cancer-poumon",
+      "country": "Czech Republic",
+      "hook": "A former dissident jailed by the communist regime, he governed for thirteen years while facing lung cancer, its recurrence, then emergency surgery — without ever leaving office.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "tony-coelho",
+      "name": "Tony Coelho",
+      "pathologyLabel": "Epilepsy",
+      "pathologyFilter": "epilepsie",
+      "country": "United States",
+      "hook": "Epilepsy diagnosed in seminary barred him from the priesthood. He became the third-ranking figure in the U.S. Congress and the author of America's landmark disability law.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "talleyrand",
+      "name": "Talleyrand",
+      "pathologyLabel": "Congenital clubfoot",
+      "pathologyFilter": "pied-bot",
+      "country": "France",
+      "hook": "A clubfoot from childhood, stripped of his birthright as the eldest son, he became one of the most influential diplomats in the history of Europe, serving five successive regimes.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "dilma-rousseff",
+      "name": "Dilma Rousseff",
+      "pathologyLabel": "Lymphoma + after-effects of torture (thyroid disease)",
+      "pathologyFilter": "lymphome",
+      "country": "Brazil",
+      "hook": "Tortured for twenty-two days under the military dictatorship, then cancer fought while in power: she became the first woman president of Brazil.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "lenin-moreno",
+      "name": "Lenín Moreno",
+      "pathologyLabel": "Paraplegia (gunshot wound)",
+      "pathologyFilter": "paraplegie",
+      "country": "Ecuador",
+      "hook": "A bullet in the back left him paraplegic. Twenty years later, he became the only head of state in the world governing from a wheelchair.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "hussein-de-jordanie",
+      "name": "Hussein of Jordan",
+      "pathologyLabel": "Lymphoma",
+      "pathologyFilter": "lymphome",
+      "country": "Jordan",
+      "hook": "Dying of cancer, he signed his last act as king from his bed: changing the line of succession, fourteen days before his death, after forty-seven years on the throne.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "natalia-partyka",
+      "name": "Natalia Partyka",
+      "pathologyLabel": "Congenital malformation (agenesis of the right hand and forearm)",
+      "pathologyFilter": "agenesie-avant-bras",
+      "country": "Poland",
+      "hook": "Born without a right hand or forearm, she became the only table tennis player to compete in both the Olympic and Paralympic Games, with four consecutive titles to her name.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "olga-skorokhodova",
+      "name": "Olga Skorokhodova",
+      "pathologyLabel": "Deafblindness (meningitis at age 5)",
+      "pathologyFilter": "surdicecite",
+      "country": "Ukraine (USSR)",
+      "hook": "Deaf and blind since the age of five, she became the first researcher in the world to make her own perception of the world the very subject of her science.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "fatma-omar",
+      "name": "Fatma Omar",
+      "pathologyLabel": "Polio",
+      "pathologyFilter": "polio",
+      "country": "Egypt",
+      "hook": "Polio at age one, four consecutive Paralympic powerlifting titles and one last world podium past the age of 48.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "henry-wanyoike",
+      "name": "Henry Wanyoike",
+      "pathologyLabel": "Total blindness (stroke)",
+      "pathologyFilter": "cecite-avc",
+      "country": "Kenya",
+      "hook": "Blinded overnight at 20 after a stroke, he became Paralympic 5000m champion, linked to his guide by a simple cord tied to his hand.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "satoshi-fukushima",
+      "name": "Satoshi Fukushima",
+      "pathologyLabel": "Progressive deafblindness",
+      "pathologyFilter": "surdicecite",
+      "country": "Japan",
+      "hook": "Deafblind from the age of 18, he became the first deafblind professor in the history of the University of Tokyo, teaching through braille tapped onto his fingers.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "cheah-liek-hou",
+      "name": "Cheah Liek Hou",
+      "pathologyLabel": "Obstetric brachial plexus palsy",
+      "pathologyFilter": "paralysie-obstetricale",
+      "country": "Malaysia",
+      "hook": "A nerve damaged at birth left him with a weak right hand. He became the very first Paralympic champion in the history of para-badminton.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "song-lingling",
+      "name": "Song Lingling",
+      "pathologyLabel": "Polio",
+      "pathologyFilter": "polio",
+      "country": "China",
+      "hook": "Her legs paralyzed by polio, she entered a swimming pool for the first time at thirteen — seven years later, she was Paralympic champion and held the world record.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "deepa-malik",
+      "name": "Deepa Malik",
+      "pathologyLabel": "Spinal tumor (paraplegia)",
+      "pathologyFilter": "tumeur-spinale",
+      "country": "India",
+      "hook": "Paralyzed at 29 by a spinal tumor, she became the first Indian woman to win a Paralympic medal, across all sports.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "mark-malyar",
+      "name": "Mark Malyar",
+      "pathologyLabel": "Congenital cerebral palsy",
+      "pathologyFilter": "pc",
+      "country": "Israel",
+      "hook": "Enrolled in swimming at five to rehabilitate his cerebral palsy, he now holds four swimming world records simultaneously.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "hellen-saohaga",
+      "name": "Hellen Saohaga",
+      "pathologyLabel": "Congenital leg malformation",
+      "pathologyFilter": "malformation-congenitale-jambes",
+      "country": "Solomon Islands",
+      "hook": "Born with a malformation of the legs in an archipelago with no adaptive sports structure whatsoever, she became the first Paralympic athlete in the history of the Solomon Islands.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "yip-pin-xiu",
+      "name": "Yip Pin Xiu",
+      "pathologyLabel": "Charcot-Marie-Tooth disease",
+      "pathologyFilter": "cmt",
+      "country": "Singapore",
+      "hook": "Diagnosed with a genetic neuromuscular disease, she became Singapore's first Paralympic champion — and the youngest Nominated Member of Parliament in the country's history.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "mayumi-narita",
+      "name": "Mayumi Narita",
+      "pathologyLabel": "Transverse myelitis",
+      "pathologyFilter": "myelite-transverse",
+      "country": "Japan",
+      "hook": "Her legs paralyzed at thirteen by transverse myelitis, she became Japan's “Queen of the Water”: fifteen titles and six Paralympic Games, from 1996 to 2021.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "farida-bedwei",
+      "name": "Farida Bedwei",
+      "pathologyLabel": "Cerebral palsy",
+      "pathologyFilter": "pc",
+      "country": "Ghana",
+      "hook": "Diagnosed with cerebral palsy at one and homeschooled for lack of suitable schools, she became a principal engineer at Microsoft after co-founding a company that digitized microfinance in Ghana.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "zakia-khudadadi",
+      "name": "Zakia Khudadadi",
+      "pathologyLabel": "Congenital malformation of the left arm",
+      "pathologyFilter": "malformation-bras",
+      "country": "Afghanistan",
+      "hook": "Evacuated from Kabul as the Taliban were taking the city, this Afghan woman born with an impaired arm won the very first medal in the history of the Refugee Paralympic Team.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "daniel-dias",
+      "name": "Daniel Dias",
+      "pathologyLabel": "Congenital malformation of all four limbs",
+      "pathologyFilter": "malformation-congenitale-membres",
+      "country": "Brazil",
+      "hook": "Born with a congenital malformation affecting all four limbs, he became the most decorated male Paralympic swimmer in history, with twenty-seven medals across four Games.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "wanda-diaz-merced",
+      "name": "Wanda Díaz-Merced",
+      "pathologyLabel": "Blindness (complications of diabetes)",
+      "pathologyFilter": "retinopathie-diabetique",
+      "country": "Puerto Rico",
+      "hook": "Blinded in her early twenties by diabetes, this astrophysicist invented a method to “listen” to the stars, now used by astronomers around the world.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "kurt-fearnley",
+      "name": "Kurt Fearnley",
+      "pathologyLabel": "Sacral agenesis",
+      "pathologyFilter": "agenesie-sacree",
+      "country": "Australia",
+      "hook": "Born with sacral agenesis that raised fears he would not survive his first week, he became a three-time Paralympic champion — then crawled 96 km through the jungle to raise awareness of men's health.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "ellie-cole",
+      "name": "Ellie Cole",
+      "pathologyLabel": "Amputation (neurosarcoma)",
+      "pathologyFilter": "neurosarcome",
+      "country": "Australia",
+      "hook": "One leg amputated at two because of a rare tumor, she became the most decorated female Paralympian in Australian history, with seventeen medals across four Games.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "zanele-situ",
+      "name": "Zanele Situ",
+      "pathologyLabel": "Paraplegia (spinal tuberculosis)",
+      "pathologyFilter": "tuberculose-spinale",
+      "country": "South Africa",
+      "hook": "Paralyzed at twelve by spinal tuberculosis under apartheid, she became the first Black South African woman to become Paralympic champion, in Sydney in 2000.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "charl-du-toit",
+      "name": "Charl du Toit",
+      "pathologyLabel": "Cerebral palsy",
+      "pathologyFilter": "pc",
+      "country": "South Africa",
+      "hook": "Cerebral palsy affecting one whole side of his body, spotted by chance at a physiotherapist's at seventeen: he became a double Paralympic sprint champion in Rio, breaking two world records.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "alan-oliveira",
+      "name": "Alan Oliveira",
+      "pathologyLabel": "Bilateral amputation (neonatal sepsis)",
+      "pathologyFilter": "septicemie-neonatale",
+      "country": "Brazil",
+      "hook": "Both legs amputated at three weeks old to save his life, he dethroned Oscar Pistorius in the 200 meters at London 2012 — seven hundredths of a second that made news around the world.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "lee-thiam-wah",
+      "name": "Lee Thiam Wah",
+      "pathologyLabel": "Polio",
+      "pathologyFilter": "polio",
+      "country": "Malaysia",
+      "hook": "His legs paralyzed by polio at eight months, with only six years of schooling for lack of money: he became the Malaysian billionaire at the head of the country's largest convenience store chain, more than 3,000 stores.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "srikanth-bolla",
+      "name": "Srikanth Bolla",
+      "pathologyLabel": "Congenital blindness",
+      "pathologyFilter": "cecite-congenitale",
+      "country": "India",
+      "hook": "Blind from birth, he had to win a lawsuit for the right to study science in high school — the first blind international student at MIT, he became a social entrepreneur carried all the way to the screen by a hit biopic.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "amit-goffer",
+      "name": "Amit Goffer",
+      "pathologyLabel": "Quadriplegia (accident)",
+      "pathologyFilter": "tetraplegie",
+      "country": "Israel",
+      "hook": "Quadriplegic after an ATV accident with his family, this engineer invented the ReWalk exoskeleton in seven years — approved in the United States, it has enabled hundreds of paralyzed people to walk again.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "cai-lei",
+      "name": "Cai Lei",
+      "pathologyLabel": "Amyotrophic lateral sclerosis (ALS)",
+      "pathologyFilter": "sla",
+      "country": "China",
+      "hook": "A top executive in Chinese e-commerce, diagnosed with ALS at 41: he can no longer walk or speak, yet still runs, through eye movements alone, a platform that has advanced hundreds of treatments.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "kjell-inge-rokke",
+      "name": "Kjell Inge Røkke",
+      "pathologyLabel": "Dyslexia",
+      "pathologyFilter": "dyslexie",
+      "country": "Norway",
+      "hook": "Dyslexic, he left school at 14 to work as a fisherman on Alaskan trawlers — forty years on, he chairs one of Norway's largest industrial groups, at the head of a fortune of more than ten billion dollars.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "olivier-jeannel",
+      "name": "Olivier Jeannel",
+      "pathologyLabel": "Deafness (since age two)",
+      "pathologyFilter": "surdite-precoce",
+      "country": "France",
+      "hook": "Deaf since the age of two, unable to make a phone call on his own: he founded the company that now runs France's national relay center, more than 450,000 calls made possible in three years.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "collette-divitto",
+      "name": "Collette Divitto",
+      "pathologyLabel": "Down syndrome",
+      "pathologyFilter": "trisomie-21",
+      "country": "United States",
+      "hook": "Living with Down syndrome, a graduate turned down by every employer in Boston, she launched her own cookie business from the family kitchen — fifteen employees later, her story inspired a film honored at the Student Academy Awards.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "sebenzile-matsebula",
+      "name": "Sebenzile Matsebula",
+      "pathologyLabel": "Polio (paraplegia)",
+      "pathologyFilter": "polio",
+      "country": "South Africa",
+      "hook": "Paraplegic after contracting polio at ten months, she first led disability policy in the South African Presidency before becoming co-director and shareholder of a company employing more than 150 people.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "masayoshi-son",
+      "name": "Masayoshi Son",
+      "pathologyLabel": "Chronic hepatitis B",
+      "pathologyFilter": "hepatite-b",
+      "country": "Japan",
+      "hook": "Diagnosed with chronic hepatitis B at 25 and given three to five years to live, he recovered and took back the reins of SoftBank — becoming one of the most influential technology investors in the world, from Yahoo to Alibaba.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "hikari-oe",
+      "name": "Hikari Ōe",
+      "pathologyLabel": "Congenital encephalocele",
+      "pathologyFilter": "encephalocele-congenitale",
+      "country": "Japan",
+      "hook": "He did not speak his first sentence until age six, imitating a bird's song. Having become a composer with perfect pitch, he would inspire the novel that won his father the Nobel Prize in Literature.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "yayoi-kusama",
+      "name": "Yayoi Kusama",
+      "pathologyLabel": "Psychiatric disorder (hallucinations)",
+      "pathologyFilter": "trouble-psychiatrique",
+      "country": "Japan",
+      "hook": "Haunted since childhood by hallucinations of polka dots and infinite nets, she made them the substance of one of the most visited bodies of work in contemporary art, without ever ceasing to speak about them openly.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "lee-hee-ah",
+      "name": "Lee Hee-ah",
+      "pathologyLabel": "Congenital malformation of the hands and legs",
+      "pathologyFilter": "malformation-congenitale-mains-jambes",
+      "country": "South Korea",
+      "hook": "With two fingers on each hand and legs amputated in childhood, she became an acclaimed classical pianist, before putting her fame in the service of inter-Korean reconciliation.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "tai-lihua",
+      "name": "Tai Lihua",
+      "pathologyLabel": "Early deafness (acquired at age 2)",
+      "pathologyFilter": "surdite-precoce",
+      "country": "China",
+      "hook": "Deaf from the age of two after a medical treatment, she led a troupe of deaf dancers in a routine seen by hundreds of millions of Chinese viewers, timed to vibrations rather than to the music.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "ravindra-jain",
+      "name": "Ravindra Jain",
+      "pathologyLabel": "Congenital blindness",
+      "pathologyFilter": "cecite-congenitale",
+      "country": "India",
+      "hook": "Blind from birth, he composed the music for the most watched television series in India's history and scored more than a hundred films, without ever seeing a single screen.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "sheikh-imam",
+      "name": "Sheikh Imam",
+      "pathologyLabel": "Early blindness (from infancy)",
+      "pathologyFilter": "cecite-precoce",
+      "country": "Egypt",
+      "hook": "Blind since his first months of life, he became, alongside the poet Ahmed Fouad Negm, one of Egypt's most popular voices of protest — banned from the official airwaves but sung in chorus across the whole country.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "salif-keita",
+      "name": "Salif Keita",
+      "pathologyLabel": "Albinism",
+      "pathologyFilter": "albinisme",
+      "country": "Mali",
+      "hook": "Rejected by his father and his village because of his albinism, he became “the Golden Voice of Africa” and one of the most committed advocates for people with albinism across the continent.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "edvard-munch",
+      "name": "Edvard Munch",
+      "pathologyLabel": "Nervous breakdown with hallucinations",
+      "pathologyFilter": "crise-nerveuse-hallucinations",
+      "country": "Norway",
+      "hook": "Haunted by grief and anxiety since childhood, the painter of The Scream went through a severe nervous breakdown documented in his lifetime — an episode he considered inseparable from his art.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "cazuza",
+      "name": "Cazuza",
+      "pathologyLabel": "HIV/AIDS",
+      "pathologyFilter": "vih-sida",
+      "country": "Brazil",
+      "hook": "The first public face of AIDS in Brazil, this rock lyricist revealed he was HIV-positive in the middle of an interview, in 1989, helping to change how an entire country looked at the disease.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "vaslav-nijinsky",
+      "name": "Vaslav Nijinsky",
+      "pathologyLabel": "Schizophrenia",
+      "pathologyFilter": "schizophrenie",
+      "country": "Russian Empire",
+      "hook": "The most famous dancer of his time, he saw his career come to an abrupt halt at thirty, struck down by schizophrenia — a diagnosis exceptionally well documented by the greatest psychiatrists of the era.",
+      "tint": "tint-3"
     }
   ]
 }
