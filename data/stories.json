@@ -1010,6 +1010,150 @@
       "country": "Empire russe",
       "hook": "Danseur le plus célèbre de son temps, il a vu sa carrière s'arrêter net à trente ans, terrassé par la schizophrénie — un diagnostic exceptionnellement bien documenté par les plus grands psychiatres de l'époque.",
       "tint": "tint-3"
+    },
+    {
+      "id": "olivier-goy",
+      "name": "Olivier Goy",
+      "pathologyLabel": "Sclérose latérale amyotrophique (SLA)",
+      "pathologyFilter": "sla",
+      "country": "France",
+      "hook": "Il a bâti l'une des premières plateformes européennes de prêt aux PME, puis levé des millions pour la recherche sur une maladie qui lui a pris la marche et la voix.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "michel-petrucciani",
+      "name": "Michel Petrucciani",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "France",
+      "hook": "Sept albums chez Blue Note, une rallonge métallique sur la pédale de sustain — l'un des plus grands pianistes de jazz de sa génération.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "peter-radtke",
+      "name": "Peter Radtke",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Allemagne",
+      "hook": "Philologue, acteur au Burgtheater, et treize ans au Conseil d'éthique allemand — l'Allemagne a confié ses arbitrages de bioéthique à un homme qu'un dépistage aurait pu écarter.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "philippe-rahmy",
+      "name": "Philippe Rahmy",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Suisse",
+      "hook": "À Shanghai, des milliers de paires d'yeux enfin à sa hauteur — le voyage qui a fait de lui l'un des écrivains suisses les plus primés de sa décennie.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "guillaume-bats",
+      "name": "Guillaume Bats",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "France",
+      "hook": "Placé à la DDASS à un an, 100 sur 100 à On n'demande qu'à en rire — il a fait rire la France sur ce dont personne ne rit.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "stella-young",
+      "name": "Stella Young",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Australie",
+      "hook": "Journaliste et polémiste, elle a forgé l'expression « inspiration porn » pour désigner ce qu'elle refusait d'être.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "nabil-shaban",
+      "name": "Nabil Shaban",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Jordanie",
+      "hook": "Aucune école d'art dramatique britannique ne voulait de lui en 1972 ; huit ans plus tard il cofondait la Graeae Theatre Company.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "franco-bomprezzi",
+      "name": "Franco Bomprezzi",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Italie",
+      "hook": "Journaliste à la RAI puis voix du handicap en Italie — Milan lui a confié l'accessibilité de son Exposition universelle.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "nicky-chapman",
+      "name": "Nicky Chapman",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Royaume-Uni",
+      "hook": "Première personne née avec un handicap congénital à siéger à la Chambre des lords — et un écriteau à sa porte : « Normal people worry me ».",
+      "tint": "tint-3"
+    },
+    {
+      "id": "wang-yiou",
+      "name": "Wang Yi'ou",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Chine",
+      "hook": "Diagnostiquée à seize ans, elle a fondé la première organisation chinoise des maladies rares et monte sur scène avec un groupe de rock.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "firdaus-kanga",
+      "name": "Firdaus Kanga",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Inde",
+      "hook": "Romancier de Bombay dont le texte figure au programme national indien — des millions d'élèves ouvrent son chapitre chaque année.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "freyja-haraldsdottir",
+      "name": "Freyja Haraldsdóttir",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Islande",
+      "hook": "Sept ans de procédures et deux victoires judiciaires pour obtenir le droit de devenir famille d'accueil. Elle l'est depuis 2023.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "jordanne-whiley",
+      "name": "Jordanne Whiley",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Royaume-Uni",
+      "hook": "Grand Chelem calendaire en double en 2014, quatre médailles paralympiques — la fille du bronze de Séoul a fait mieux que son père.",
+      "tint": "tint-1"
+    },
+    {
+      "id": "valentin-baus",
+      "name": "Valentin Baus",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "Allemagne",
+      "hook": "Champion de district debout, puis numéro un mondial en fauteuil — et une balle de match sauvée pour l'or de Tokyo.",
+      "tint": "tint-2"
+    },
+    {
+      "id": "kara-ayers",
+      "name": "Kara Ayers",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "États-Unis",
+      "hook": "Sept ans de plaidoyer pour qu'un État américain cesse de retirer des enfants à leurs parents au seul motif du handicap.",
+      "tint": "tint-3"
+    },
+    {
+      "id": "sean-stephenson",
+      "name": "Sean Stephenson",
+      "pathologyLabel": "Ostéogenèse imparfaite",
+      "pathologyFilter": "oi",
+      "country": "États-Unis",
+      "hook": "Des séances de thérapie de douze heures et une règle apprise de sa mère : quinze minutes d'apitoiement, pas une de plus.",
+      "tint": "tint-1"
     }
   ]
 }
