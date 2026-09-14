@@ -76,16 +76,19 @@ en/index.html, en/story.html, en/propose.html, en/thanks.html : pages EN,
   gardent des chemins relatifs.
 en/js/main.js, en/js/story.js : logique EN, quasi-identique aux versions
   FR mais fetch en/data/stories.json et en/data/articles/<id>.txt.
-en/data/stories.json : métadonnées traduites (pathologyLabel, country,
-  hook) pour les 50 histoires. id/tint/pathologyFilter/featured identiques
-  à la version FR (ne JAMAIS les traduire, ce sont des clés techniques).
-en/data/articles/<id>.txt : articles traduits. État au 17/08/2026 :
-  15/50 traduits (mckenzie-coan, stephen-hawking, michael-j-fox,
-  richard-branson, stevie-wonder, andrea-bocelli, ludwig-van-beethoven,
-  joni-mitchell, neil-young, john-nash, temple-grandin, nick-vujicic,
-  aimee-mullins, sam-berns, bebe-vio). Pour les 35 autres, story.js EN
-  affiche le hook + un message "the English translation is on its way,
-  read it in French" — jamais d'erreur ni de page blanche.
+en/data/stories.json : métadonnées traduites (name quand l'usage anglais
+  diffère — John Paul II, Hussein of Jordan, Sheikh Imam —,
+  pathologyLabel, country, hook) pour les 111 histoires, dans le même
+  ordre que le FR. id/tint/pathologyFilter/featured identiques à la
+  version FR (ne JAMAIS les traduire, ce sont des clés techniques). Un
+  même libellé FR doit toujours donner le même libellé EN (ex.
+  "Poliomyélite" → "Polio") : reprendre les paires existantes avant d'en
+  créer une nouvelle.
+en/data/articles/<id>.txt : articles traduits. État au 14/09/2026 :
+  111/111 traduits. Le fallback de story.js EN (hook + "the English
+  translation is on its way, read it in French") reste en place pour
+  toute future histoire ajoutée en FR avant sa traduction — jamais
+  d'erreur ni de page blanche.
 Sélecteur de langue : lien "EN"/"FR" dans la nav (.lang-switch). Sur
   index.html/en/index.html il pointe simplement vers l'autre accueil. Sur
   story.html/en/story.html (id="lang-switch"), il est réécrit en JS pour
@@ -184,13 +187,26 @@ et sourcé en français. Plusieurs premiers jets ont été rejetés ou refaits
 après vérification insuffisante (ex : Anthony Robles et Zion Clark, une
 première tentative limitée à une seule source a été entièrement refaite).
 Traduction anglaise (en/data/articles/) : traduction fidèle du texte
-français déjà vérifié, pas une nouvelle recherche. Règle de citation :
-quand l'article français avait déjà conservé la citation originale en
-anglais (cas fréquent pour les personnalités anglophones, ex. Michael J.
-Fox, Stevie Wonder), on restitue cette citation originale telle quelle
-plutôt que de la traduire depuis le français — évite une double
-traduction qui dériverait du mot pour mot. Sinon, traduction directe du
-français en anglais, présentée avec les mêmes guillemets.
+français déjà vérifié, pas une nouvelle recherche — même nombre de
+paragraphes, même scène d'ouverture, mêmes réserves ("selon plusieurs
+sources", conditionnel), longueur à ±20 %. Règle de citation (durcie le
+03/09/2026, appliquée aux 111 articles) : une citation d'origine anglaise
+n'est JAMAIS retraduite depuis le français — on restitue l'original mot
+pour mot, retrouvé dans le doc projet de l'article
+(claude/incassable-media-article-<id>.md) ou, si le doc ne conserve que
+l'URL, en allant chercher la page source elle-même ; si l'original exact
+reste introuvable, le passage bascule en discours indirect SANS
+guillemets, jamais de reconstitution présentée comme citation. Une
+citation en langue tierce (portugais, espagnol, néerlandais, allemand,
+japonais, ou français quand le sujet est francophone) est traduite en
+anglais entre guillemets ; quand le FR conservait l'original, l'EN le
+conserve aussi + traduction. Style EN : présent de narration, orthographe
+américaine (graphies britanniques conservées à l'intérieur des citations
+verbatim et des noms propres), dates "March 6, 1919", guillemets droits.
+Incohérences repérées dans les textes FR pendant la traduction :
+consignées dans claude/incassable-media-points-a-verifier-fr.md (projet
+Claude) plutôt que corrigées à la volée ; seules les coquilles sans
+ambiguïté ont été corrigées.
 
 ## CMS (Decap CMS)
 admin/index.html et admin/config.yml donnent à Erwan une interface web
@@ -206,11 +222,11 @@ jamais revenir à un tableau JSON brut à la racine.
 ## Prochaines étapes connues
 Objectif des 100+ histoires atteint (111 au 03/09/2026, tous les dossiers
 de scouting disponibles sont rédigés ; seul Sean Stephenson reste écarté
-en attente d'un échange direct avec Erwan). Priorité de contenu suivante :
-la traduction anglaise — 15/111 articles traduits, en/data/stories.json ne
-contient encore que les 50 premières entrées. Dès le renouvellement des
-crédits Netlify (12-13/09), déclencher un déploiement pour mettre en ligne
-les 61 histoires déjà sur GitHub (voir section Crédits Netlify).
+en attente d'un échange direct avec Erwan). Édition anglaise complète
+depuis le 14/09/2026 (111/111 articles + stories.json à 111 entrées, tout
+sur GitHub). Chantier de qualité suivant : la passe de vérification des
+points listés dans claude/incassable-media-points-a-verifier-fr.md, puis
+un nouveau lot de scouting.
 Retenter Git Gateway périodiquement. Étendre admin/config.yml pour
 permettre l'édition des articles complets (pas seulement des cartes) une
 fois Git Gateway fonctionnel. Domaine lesincassables.com connecté et
@@ -256,6 +272,22 @@ déploiement manuellement dans Netlify (projet lesincassables.com → Deploys
 → "Trigger deploy") ou pousser un nouveau commit. Un seul déploiement
 suffira pour mettre en ligne les trois commits en attente. En attendant, le
 site public affiche toujours 50 histoires.
+Mise à jour du 14/09/2026 : l'édition anglaise complète (111 articles +
+stories.json) a été poussée sur GitHub (commits 55d77fb, 934c503,
+0532427). Le renouvellement des crédits était attendu le 12-13/09 — voir
+l'état réel du tableau de bord au moment où vous lisez ceci.
+
+## ⚠️ Leçon du 14/09/2026 : ne jamais laisser un travail uniquement en local
+L'environnement de travail Claude est TEMPORAIRE et recyclé après une
+période d'inactivité (constaté après 11 jours). Le 03/09, les 96
+traductions anglaises et 4 corrections FR avaient été committées en local
+mais PAS poussées sur GitHub (on attendait un feu vert) : tout a été perdu
+et a dû être refait intégralement le 14/09. Règle qui en découle : dès
+qu'un lot de travail est terminé et vérifié, il est poussé sur GitHub
+immédiatement, lot par lot — un commit local n'est PAS une sauvegarde. Si
+la publication doit attendre une décision, pousser quand même (Netlify
+marquera le build "Skipped" sans consommer de crédits) plutôt que de
+garder le travail en local.
 
 ## Style de travail avec Erwan
 Erwan n'est pas développeur, explique en langage simple ce que tu fais et
